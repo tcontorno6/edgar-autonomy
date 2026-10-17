@@ -1,0 +1,7 @@
+ticker,company,distinct_numbers_in_text,company_reported_numbers,third_party_benchmark_numbers,subjects,metrics,first_number_filed,last_number_filed,notably_never_quantified,autonomy_mentions_2019_2026,company_numbers_per_100_mentions
+TSLA,Tesla,13,11,2,"Tesla FSD (Supervised), driver-assist: 5; Tesla Autopilot, driver-assist: 3; Tesla Robotaxi service: 3",miles_driven: 5; safety_rate: 2; fleet_size: 2; cities: 2,2019-10-23,2026-07-22,Robotaxi miles / rides / fleet in text (paid Robotaxi miles appear only as chart images),1308,0.84
+GOOGL,Alphabet (Waymo),1,1,0,Waymo robotaxi: 1,rides: 1,2026-04-29,2026-04-29,"Waymo miles, cities, fleet (only 1 number: weekly rides, Q1 2026 release)",36,2.78
+UBER,Uber,2,2,0,Uber Freight autonomous trucking: 1; Uber robotaxi purchase commitment (Nuro/Lucid): 1,miles_driven: 1; fleet_size: 1,2023-11-07,2025-08-06,rides or miles on its own AV partner deployments,2012,0.1
+LYFT,Lyft,2,2,0,"partner AV rides on Lyft (Aptiv, safety driver): 1; partner AV rides on Lyft (Motional, safety driver): 1",rides: 2,2020-02-28,2021-03-01,anything after 2021 (both numbers are 2018-2020 partner pilots),1798,0.11
+GM,GM (Cruise),7,7,0,"GM Super Cruise, driver-assist (not Cruise): 7",road_coverage_miles: 5; miles_driven: 2,2019-08-01,2026-01-27,Cruise robotaxi (0 numbers in 7 years of GM filings),2000,0.35
+AMZN,Amazon (Zoox),4,4,0,Zoox robotaxi: 4,cities: 2; miles_driven: 1; riders: 1,2025-05-01,2026-04-29,anything before 2025 (Zoox numbers start in 2025 earnings releases),64,6.25

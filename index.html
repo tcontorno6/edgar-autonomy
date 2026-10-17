@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="What six companies actually disclose about robotaxis and autonomy in their SEC filings, 2019-2026.">
+<title>Robotaxi Disclosure Gap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: single narrow editorial column of research-note sections; each finding is a titled band with a chart drawn to the column width. */
+:root{
+  --bg:#eef1f4; --surface:#ffffff; --ink:#161b22; --muted:#5a6673; --faint:#8a95a2;
+  --line:#dde3e9; --accent:#2f5bd0; --accent-soft:#e6ecfb;
+  --pos:#1f9d6b; --neg:#d6453d; --gm:#6b4ff0;
+  --serif:"IBM Plex Serif",Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1116; --surface:#161b22; --ink:#e9edf1; --muted:#9aa5b1; --faint:#6b7684;
+  --line:#242b34; --accent:#6a92f2; --accent-soft:#1a2440;
+  --pos:#39c489; --neg:#f06b63; --gm:#9a86f5; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0e1116; --surface:#161b22; --ink:#e9edf1; --muted:#9aa5b1; --faint:#6b7684;
+  --line:#242b34; --accent:#6a92f2; --accent-soft:#1a2440;
+  --pos:#39c489; --neg:#f06b63; --gm:#9a86f5; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;margin:0;
+  -webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:860px;margin:0 auto;padding-inline:20px;padding-block:0}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;line-height:1.18;letter-spacing:-.01em}
+a{color:var(--accent)}
+.mono{font-family:var(--mono)}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* header */
+header{border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-size:clamp(30px,6vw,46px);font-weight:600;margin:.35em 0 .3em}
+.lede{font-size:clamp(16px,2.4vw,19px);color:var(--muted);max-width:60ch;margin:0}
+.byline{margin-top:18px;font-size:13px;color:var(--faint);font-family:var(--mono)}
+.byline b{color:var(--muted);font-weight:500}
+
+/* stat tiles */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:26px 0 4px}
+.stat{background:var(--surface);padding:14px 12px}
+.stat .v{font-family:var(--mono);font-weight:600;font-size:clamp(17px,3.2vw,22px);letter-spacing:-.02em}
+.stat .k{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.3}
+@media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:1/-1}}
+
+/* sections */
+section{padding-block:40px;border-bottom:1px solid var(--line)}
+.fnum{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.12em;font-weight:600}
+h2{font-size:clamp(22px,4vw,30px);font-weight:600;margin:.3em 0 .4em}
+.sub{color:var(--muted);max-width:64ch;margin:0 0 20px}
+p{max-width:64ch}
+.kicker{font-weight:600;color:var(--ink)}
+
+/* chart card */
+.chart{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 16px 14px;margin:18px 0}
+.chart h4{margin:0 0 2px;font-family:var(--sans);font-size:14px;font-weight:600}
+.chart .cap{font-size:12.5px;color:var(--muted);margin:0 0 12px}
+.csvg{width:100%;display:block;min-width:0}
+figcaption{font-size:12px;color:var(--faint);margin-top:10px}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted);margin-top:10px;font-family:var(--mono)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.swatch{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+
+/* callout */
+.callout{background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);
+  border-radius:10px;padding:14px 16px;margin:18px 0;font-size:14.5px}
+.callout b{color:var(--ink)}
+
+/* table */
+.tablewrap{overflow-x:auto;margin:18px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:var(--surface)}
+tbody tr:last-child td{border-bottom:none}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:600;text-align:right;white-space:nowrap}
+.co{font-weight:600}
+.zero{color:var(--neg);font-weight:600}
+
+/* methods */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:620px){.grid2{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.panel h3{font-size:15px;margin:0 0 10px;font-family:var(--sans);font-weight:600}
+.panel ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--muted)}
+.panel li{margin:.3em 0}
+.vtable{font-size:12.5px}
+footer{padding:30px 0 50px;color:var(--faint);font-size:12.5px}
+footer a{color:var(--accent)}
+.src{font-family:var(--mono);font-size:12px}
+.links{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0}
+.links a{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface);
+  padding:8px 13px;border-radius:8px;text-decoration:none;color:var(--ink);font-size:13px;font-weight:500}
+@media (prefers-reduced-motion:no-preference){.gline{transition:opacity .2s}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="padding-block:38px 30px">
+    <div class="eyebrow">edgar-autonomy · a primary-source study</div>
+    <h1>What six companies' SEC filings actually say about robotaxis</h1>
+    <p class="lede">Robotaxis are among the most hyped stories in tech and autos. This measures what Tesla, Alphabet, GM, Amazon, Uber and Lyft put in the one place that carries legal liability: their filings. Every number below traces to the exact sentence it came from.</p>
+    <div class="byline">By <b>Tyler Contorno</b> · built only from EDGAR · no paid APIs · 2026</div>
+    <div class="stats">
+      <div class="stat"><div class="v">6</div><div class="k">companies</div></div>
+      <div class="stat"><div class="v">762</div><div class="k">filings (1,137 documents)</div></div>
+      <div class="stat"><div class="v">9.27M</div><div class="k">words read</div></div>
+      <div class="stat"><div class="v">2019–26</div><div class="k">through Q2 2026</div></div>
+      <div class="stat"><div class="v">29</div><div class="k">operational numbers found</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="attention">
+    <div class="fnum">FINDING 01</div>
+    <h2>GM talks about robotaxis the most. The companies actually running them barely appear.</h2>
+    <p class="sub">Robotaxi-service mentions per 1,000 words of filing text, pooled across 2019–2026. Waymo and Zoox, the two services carrying real driverless passengers, are nearly invisible in their parents' filings.</p>
+    <div class="chart">
+      <h4>Robotaxi-service language, pooled rate per 1,000 words</h4>
+      <p class="cap">Prose only. Table rows and corporate-transaction mentions excluded.</p>
+      <div class="csvg" id="c-pooled"></div>
+    </div>
+    <div class="chart">
+      <h4>Two dynamics over time</h4>
+      <p class="cap">GM's attention swells through the Cruise era; Tesla's is near zero until its 2025 Robotaxi launch. Uber, Lyft, Waymo and Zoox stay near the floor throughout.</p>
+      <div class="csvg" id="c-attnline"></div>
+      <div class="legend" id="l-attnline"></div>
+    </div>
+  </section>
+
+  <section id="quant">
+    <div class="fnum">FINDING 02</div>
+    <h2>Across 1,137 documents, the six disclosed 29 operational numbers.</h2>
+    <p class="sub">Distinct operational autonomy numbers stated in filing <em>text</em> — miles, rides, cities, fleet, safety. Twenty-seven are the companies' own; two are U.S.-average crash benchmarks Tesla quotes. The only driverless operating figure in seven years is Waymo's weekly ride count.</p>
+    <div class="chart">
+      <h4>Operational numbers disclosed in filing text</h4>
+      <p class="cap">First disclosures only. Figures that appear solely as chart images (Tesla's Robotaxi miles) are not counted — the extractor rejects them rather than guess.</p>
+      <div class="csvg" id="c-quant"></div>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Company</th><th>#</th><th>What the numbers are about</th><th>Notably never quantified</th></tr></thead>
+        <tbody id="t-quant"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="tva">
+    <div class="fnum">FINDING 03</div>
+    <h2>Talk and action run in reverse.</h2>
+    <p class="sub">Company-reported numbers per 100 counted autonomy mentions. The companies that talk most — Uber, Lyft, GM, largely inside risk factors — back it with the fewest numbers. The operators that mention it least do so almost only to report something.</p>
+    <div class="chart">
+      <h4>Numbers per 100 mentions <span class="mono" style="color:var(--muted);font-weight:400">· bar length = disclosure density</span></h4>
+      <p class="cap">Mention counts shown at right. Alphabet and Amazon's ratios rest on 1 and 4 numbers, so read them as descriptive, not precise.</p>
+      <div class="csvg" id="c-tva"></div>
+    </div>
+  </section>
+
+  <section id="stance">
+    <div class="fnum">FINDING 04</div>
+    <h2>The "everyone's negative on autonomy" read is a risk-factor mirage.</h2>
+    <p class="sub">Forty percent of autonomy passages sit in risk factors, which are negative by design. Read raw, every company looks sour on autonomy. Controlled against the non-autonomy text of the same sections, it flips.</p>
+    <div class="callout">
+      <b>Before the control:</b> net tone looks negative for all — Lyft <span class="mono">−20.8</span>, Uber <span class="mono">−7.7</span>, GM <span class="mono">−6.6</span>, Tesla <span class="mono">−5.9</span>. <b>After it:</b> five of six write about autonomy measurably <i>more positively</i> than the surrounding text. Only Lyft is indistinguishable from its baseline.
+    </div>
+    <div class="chart">
+      <h4>Net tone about autonomy vs. same-section baseline</h4>
+      <p class="cap">Positive = more upbeat about autonomy than the rest of the same sections. Bars show 95% bootstrap confidence intervals over passages.</p>
+      <div class="csvg" id="c-stance"></div>
+    </div>
+  </section>
+
+  <section id="gm">
+    <div class="fnum">FINDING 05</div>
+    <h2>GM's robotaxi language is the sound of a wind-down — and it turns in late 2023.</h2>
+    <p class="sub">GM's heavy attention in Finding 01 is not enthusiasm. In the robotaxi passages outside boilerplate, tone falls off a cliff at 2023Q4 — a year before GM publicly pulled funding from Cruise's robotaxi work in December 2024.</p>
+    <div class="chart">
+      <h4>Cruise / robotaxi tone vs. baseline, by quarter</h4>
+      <p class="cap">Above zero = more positive than the surrounding text; below = more negative. The negativity is financial — restructuring, losses, impairment — not regulatory.</p>
+      <div class="csvg" id="c-gmtone"></div>
+    </div>
+    <div class="chart">
+      <h4>What the language is doing: wind-down vs. expansion vocabulary</h4>
+      <p class="cap">Share of GM robotaxi passages using wind-down words (pause, restructure, no longer fund…) vs. expansion words (launch, scale, new markets…).</p>
+      <div class="csvg" id="c-gmvocab"></div>
+      <div class="legend" id="l-gmvocab"></div>
+    </div>
+    <div class="callout">
+      <b>2025+ vs. 2019–2024</b> (permutation test, 20,000 shuffles): net tone <span class="mono">−0.8 → −14.7</span> (p&lt;0.001); wind-down vocabulary <span class="mono">7% → 66%</span> (p&lt;0.001). The turn begins at the October 2023 pedestrian accident, not the December 2024 funding decision.
+    </div>
+  </section>
+
+  <section id="methods">
+    <div class="fnum">METHOD &amp; LIMITS</div>
+    <h2>How it was built, and where it is weak.</h2>
+    <p class="sub">Four phases, each validated on a held-out sample with the rules frozen before drawing it. All analysis is local and free; no paid model was used at any step.</p>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Pipeline</h3>
+        <ul>
+          <li><b>Corpus.</b> EDGAR 10-K / 10-Q / 8-K (with EX-99 exhibits); CIKs verified; 0 fetch or clean errors.</li>
+          <li><b>Attention.</b> Curated keyword set, two groups, word-boundary and case-sensitive matching; table and corporate-transaction hits excluded.</li>
+          <li><b>Quantification.</b> Regex + a local relevance model; every number must match its source sentence at stored offsets. 0 citation failures.</li>
+          <li><b>Stance.</b> Loughran-McDonald lexicons, scored on the autonomy sentence only, reported relative to same-section baseline.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Validation (held-out)</h3>
+        <div class="tablewrap" style="margin:0;border:none">
+          <table class="vtable" style="min-width:0">
+            <tbody>
+              <tr><td>Mentions — wrong sense</td><td class="num">1.1%</td></tr>
+              <tr><td>Mentions — strict precision</td><td class="num">84%</td></tr>
+              <tr><td>Numbers — value correct</td><td class="num">100%</td></tr>
+              <tr><td>Numbers — value + claim</td><td class="num">95%</td></tr>
+              <tr><td>Stance labels — vs human</td><td class="num">80%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:18px">
+      <h3>Read with these in mind</h3>
+      <ul>
+        <li><b>Lexicon positive class.</b> Loughran-McDonald counts <i>gain</i> and <i>benefit</i> regardless of subject; short accounting sentences can score as upbeat. Positive-tone levels should be read with care (10/15 positive extremes matched a human).</li>
+        <li><b>Text only.</b> Earnings-call transcripts, where most operational numbers are spoken, are out of scope. This measures what reaches the legal record.</li>
+        <li><b>Chart-only figures excluded.</b> Tesla's paid Robotaxi miles appear only as chart axes; the extractor rejects them rather than invent a value.</li>
+        <li><b>Small samples.</b> Alphabet (1 number) and Amazon (4) are descriptive, not trends. One reviewer set all labels; there is no inter-rater measure.</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a href="https://github.com/tcontorno6/edgar-autonomy">GitHub — code &amp; data</a>
+      <a href="https://huggingface.co/tcontorno">Hugging Face</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="src">edgar-autonomy · Tyler Contorno, 2026 · source: SEC EDGAR (public domain). Sentiment lexicons: Loughran &amp; McDonald (2011). This is a research study of disclosure language, not investment advice.</p>
+  </footer>
+</main>
+
+<script>
+const DATA={
+ quarters:["2019Q1","2019Q2","2019Q3","2019Q4","2020Q1","2020Q2","2020Q3","2020Q4","2021Q1","2021Q2","2021Q3","2021Q4","2022Q1","2022Q2","2022Q3","2022Q4","2023Q1","2023Q2","2023Q3","2023Q4","2024Q1","2024Q2","2024Q3","2024Q4","2025Q1","2025Q2","2025Q3","2025Q4","2026Q1","2026Q2","2026Q3"],
+ pooled:[["GM","GM (Cruise)",1.04],["UBER","Uber",0.11],["TSLA","Tesla",0.09],["LYFT","Lyft",0.06],["AMZN","Amazon (Zoox)",0.03],["GOOGL","Alphabet (Waymo)",0.02]],
+ attn:{
+  GM:[0.914,0.673,0.874,0.832,0.575,0.491,0.460,0.472,0.537,0.685,0.766,0.805,0.774,1.134,1.053,1.073,1.042,0.915,1.023,0.786,1.203,1.751,1.568,2.006,1.456,2.193,1.927,1.782,1.220,0.959,0.885],
+  TSLA:[0,0.034,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.098,0.199,0.196,0.083,0.137,0.463,0.411,0.649,0.916,0.741],
+  UBER:[null,0.225,0.214,0.225,0.186,0.177,0.100,0.100,0.049,0.071,0.076,0.067,0.099,0.075,0.088,0.160,0.121,0.076,0.104,0.120,0.074,0.089,0.100,0.159,0.095,0.089,0.174,0.095,0.092,0.097,0.066],
+  LYFT:[null,0.040,0.037,0.038,0.102,0.043,0.043,0.043,0.097,0.057,0.044,0.041,0.090,0.043,0.041,0.036,0.093,0.053,0.055,0.052,0.102,0.070,0.070,0.072,0.100,0.044,0.041,0.060,0.084,0.068,0.094],
+  GOOGL:[0,0,0,0.039,0.021,0.028,0.018,0.021,0.039,0,0.044,0.045,0.040,0,0,0,0,0,0,0,0,0,0.043,0.043,0.036,0,0,0,0.076,0.053,0],
+  AMZN:[0,0,0,0,0,0,0,0,0.023,0,0,0,0.023,0,0,0,0,0.135,0,0,0,0.175,0.073,0,0,0.029,0,0.135,0,0.164,0.090]
+ },
+ quant:[
+  ["Tesla",13,"FSD, Autopilot and Robotaxi — all mileage driver-supervised","Robotaxi miles / rides / fleet (chart images only)"],
+  ["GM (Cruise)",7,"all Super Cruise, a driver-assist feature","Cruise robotaxi — 0 numbers in 7 years"],
+  ["Amazon (Zoox)",4,"Zoox: ~2M test miles, 350k+ riders, 6th & 8th cities","anything before 2025"],
+  ["Lyft",2,"100k+ partner rides (Aptiv, Motional) — with safety drivers","anything after 2021"],
+  ["Uber",2,"100k autonomous freight miles; 20k+ Nuro/Lucid buy commitment","its own AV-partner rides or miles"],
+  ["Alphabet (Waymo)",1,"Waymo: 500k+ fully autonomous rides a week (Q1 2026)","Waymo miles, cities, fleet, safety"]
+ ],
+ tva:[["Uber",2012,0.10],["Lyft",1798,0.11],["GM",2000,0.35],["Tesla",1308,0.84],["Alphabet",36,2.78],["Amazon",64,6.25]],
+ stance:[["Alphabet (Waymo)",36.4,26.0,48.0],["Amazon (Zoox)",32.2,26.8,37.0],["Uber",20.4,17.4,23.5],["GM (Cruise)",9.6,6.4,12.9],["Tesla",6.2,1.9,10.3],["Lyft",0.5,-4.0,4.8]],
+ gm_tone:null, gm_wd:null, gm_ex:null
+};
+// GM series
+const GM=[18.366,26.735,20.320,22.227,25.572,23.628,19.968,21.192,14.041,15.547,22.751,20.395,9.762,6.785,4.644,7.874,8.758,11.112,7.675,-3.905,-9.533,-3.925,-10.463,-2.516,-8.087,11.742,-4.164,-2.628,-5.330,0.341,-8.338];
+const GMWD=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,31.0,15.0,40.0,31.2,33.3,66.7,83.3,73.7,69.6,88.9,90.9];
+const GMEX=[22.9,40,31.6,29.4,29.2,36.4,45.5,40,31.6,35.7,35.7,43.8,31.8,33.3,29.4,31.2,26.9,36.4,33.3,21.4,27.6,35,35,28.1,9.1,16.7,11.1,5.3,4.3,11.1,9.1];
+
+const NS="http://www.w3.org/2000/svg";
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+function E(t,a={},kids=[]){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);
+  (Array.isArray(kids)?kids:[kids]).forEach(c=>{if(c==null)return;e.appendChild(typeof c==="object"?c:document.createTextNode(String(c)));});return e;}
+function txt(x,y,s,o={}){return E("text",Object.assign({x,y,"font-family":o.mono?"var(--mono)":"var(--sans)",
+  "font-size":o.fs||12,"fill":o.fill||css("--muted"),"text-anchor":o.ta||"start","font-weight":o.fw||400,
+  "dominant-baseline":o.db||"auto"},o.ls?{"letter-spacing":o.ls}:{}),s);}
+function svg(host,w,h){host.innerHTML="";const s=E("svg",{viewBox:`0 0 ${w} ${h}`,width:"100%",height:h,class:"csvg",
+  "font-family":"var(--sans)",role:"img"});host.appendChild(s);return s;}
+const W=host=>Math.max(300,Math.min(820,host.clientWidth||680));
+const qi=q=>DATA.quarters.indexOf(q);
+
+/* ---- horizontal bar (pooled attention) ---- */
+function pooled(){const host=document.getElementById("c-pooled");const w=W(host),rowH=34,padL=146,padR=56,top=6,h=top+DATA.pooled.length*rowH+8;
+  const s=svg(host,w,h);const max=1.04,innerW=w-padL-padR;
+  DATA.pooled.forEach((d,i)=>{const y=top+i*rowH+rowH/2;const bw=Math.max(2,d[2]/max*innerW);
+    const strong=d[0]==="GM";const col=strong?css("--accent"):css("--faint");
+    s.appendChild(txt(padL-10,y,d[1],{ta:"end",db:"middle",fs:12.5,fill:css("--ink"),fw:strong?600:400}));
+    s.appendChild(E("rect",{x:padL,y:y-9,width:bw,height:18,rx:4,fill:col,opacity:strong?1:.85}));
+    s.appendChild(txt(padL+bw+8,y,d[2].toFixed(2),{db:"middle",mono:true,fs:12,fw:600,fill:css("--ink")}));
+  });
+  s.appendChild(txt(padL,h-0,"per 1,000 words",{fs:10.5,fill:css("--faint"),mono:true}));
+}
+
+/* ---- multi-line (attention over time) ---- */
+function attnLine(){const host=document.getElementById("c-attnline");const w=W(host),h=300,padL=38,padR=58,padT=14,padB=28;
+  const s=svg(host,w,h);const iw=w-padL-padR,ih=h-padT-padB;const n=DATA.quarters.length;
+  const maxY=2.2;const X=i=>padL+(i/(n-1))*iw;const Y=v=>padT+ih-(v/maxY)*ih;
+  // grid + y ticks
+  [0,0.5,1,1.5,2].forEach(v=>{const y=Y(v);s.appendChild(E("line",{x1:padL,y1:y,x2:padL+iw,y2:y,stroke:css("--line")}));
+    s.appendChild(txt(padL-6,y,v.toFixed(1),{ta:"end",db:"middle",fs:10.5,mono:true,fill:css("--faint")}));});
+  // x year ticks
+  DATA.quarters.forEach((q,i)=>{if(q.endsWith("Q1")){s.appendChild(txt(X(i),h-8,q.slice(0,4),{ta:"middle",fs:10.5,mono:true,fill:css("--faint")}));}});
+  const series=[["GOOGL",css("--faint"),1,.6],["AMZN",css("--faint"),1,.6],["LYFT",css("--faint"),1,.6],["UBER",css("--faint"),1,.6],
+                ["TSLA",css("--neg"),2.4,1],["GM",css("--accent"),2.4,1]];
+  series.forEach(([k,col,wd,op])=>{const arr=DATA.attn[k];let d="",started=false;
+    arr.forEach((v,i)=>{if(v==null)return;const cmd=started?"L":"M";d+=`${cmd}${X(i).toFixed(1)} ${Y(v).toFixed(1)} `;started=true;});
+    s.appendChild(E("path",{d,fill:"none",stroke:col,"stroke-width":wd,"stroke-linejoin":"round","stroke-linecap":"round",opacity:op,class:"gline"}));
+  });
+  // endpoint labels for GM and TSLA
+  const lab=(k,name,col,dy)=>{const arr=DATA.attn[k];let li=arr.length-1;while(arr[li]==null)li--;
+    s.appendChild(txt(X(li)+6,Y(arr[li])+dy,name,{db:"middle",fs:11.5,fw:600,fill:col}));};
+  lab("GM","GM",css("--accent"),-2);lab("TSLA","Tesla",css("--neg"),4);
+  document.getElementById("l-attnline").innerHTML=
+    `<span><i class="swatch" style="background:${css('--accent')}"></i>GM</span>`+
+    `<span><i class="swatch" style="background:${css('--neg')}"></i>Tesla</span>`+
+    `<span><i class="swatch" style="background:${css('--faint')}"></i>Uber · Lyft · Waymo · Zoox</span>`;
+}
+
+/* ---- quantification bar ---- */
+function quantBar(){const host=document.getElementById("c-quant");const w=W(host),rowH=32,padL=146,padR=40,top=6,h=top+DATA.quant.length*rowH+6;
+  const s=svg(host,w,h);const max=13,iw=w-padL-padR;
+  DATA.quant.forEach((d,i)=>{const y=top+i*rowH+rowH/2;const bw=Math.max(3,d[1]/max*iw);
+    const hot=d[0].startsWith("GM")||d[0].startsWith("Alphabet");
+    s.appendChild(txt(padL-10,y,d[0],{ta:"end",db:"middle",fs:12,fill:css("--ink"),fw:hot?600:400}));
+    s.appendChild(E("rect",{x:padL,y:y-9,width:bw,height:18,rx:4,fill:hot?css("--accent"):css("--faint"),opacity:hot?1:.8}));
+    s.appendChild(txt(padL+bw+8,y,d[1],{db:"middle",mono:true,fs:12.5,fw:600,fill:css("--ink")}));
+  });
+}
+
+/* ---- talk vs action ---- */
+function tvaBar(){const host=document.getElementById("c-tva");const w=W(host),rowH=36,padL=74,padR=120,top=6,h=top+DATA.tva.length*rowH+6;
+  const s=svg(host,w,h);const max=6.25,iw=w-padL-padR;
+  DATA.tva.forEach((d,i)=>{const y=top+i*rowH+rowH/2;const bw=Math.max(3,d[2]/max*iw);
+    const op=d[0]==="Alphabet"||d[0]==="Amazon";
+    s.appendChild(txt(padL-10,y,d[0],{ta:"end",db:"middle",fs:12.5,fill:css("--ink"),fw:op?600:400}));
+    s.appendChild(E("rect",{x:padL,y:y-10,width:bw,height:20,rx:4,fill:op?css("--pos"):css("--faint"),opacity:op?1:.8}));
+    s.appendChild(txt(padL+bw+8,y,d[2].toFixed(2),{db:"middle",mono:true,fs:12.5,fw:600,fill:css("--ink")}));
+    s.appendChild(txt(w-6,y,d[1].toLocaleString()+" mentions",{ta:"end",db:"middle",fs:11,mono:true,fill:css("--muted")}));
+  });
+}
+
+/* ---- stance diverging with CI ---- */
+function stanceBar(){const host=document.getElementById("c-stance");const w=W(host),rowH=40,padL=146,padR=30,top=10,h=top+DATA.stance.length*rowH+20;
+  const s=svg(host,w,h);const lo=-6,hi=50,iw=w-padL-padR;const X=v=>padL+((v-lo)/(hi-lo))*iw;
+  // zero line
+  const zx=X(0);s.appendChild(E("line",{x1:zx,y1:top-4,x2:zx,y2:h-18,stroke:css("--muted"),"stroke-dasharray":"3 3"}));
+  s.appendChild(txt(zx,h-4,"0 = same as surrounding text",{ta:"middle",fs:10.5,mono:true,fill:css("--faint")}));
+  DATA.stance.forEach((d,i)=>{const y=top+i*rowH+rowH/2;const [name,v,l,u]=d;
+    const pos=v>0;const col=Math.abs(v)<5&&l<0?css("--muted"):(pos?css("--pos"):css("--neg"));
+    s.appendChild(txt(padL-10,y,name,{ta:"end",db:"middle",fs:12,fill:css("--ink"),fw:600}));
+    s.appendChild(E("rect",{x:Math.min(zx,X(v)),y:y-9,width:Math.abs(X(v)-zx),height:18,rx:4,fill:col,opacity:.9}));
+    // CI whisker
+    s.appendChild(E("line",{x1:X(l),y1:y,x2:X(u),y2:y,stroke:css("--ink"),"stroke-width":1.5,opacity:.55}));
+    s.appendChild(E("line",{x1:X(l),y1:y-5,x2:X(l),y2:y+5,stroke:css("--ink"),"stroke-width":1.5,opacity:.55}));
+    s.appendChild(E("line",{x1:X(u),y1:y-5,x2:X(u),y2:y+5,stroke:css("--ink"),"stroke-width":1.5,opacity:.55}));
+    s.appendChild(txt(X(v)+(v>0?8:-8),y-13,(v>0?"+":"")+v.toFixed(1),{db:"middle",ta:v>0?"start":"end",mono:true,fs:11.5,fw:600,fill:css("--ink")}));
+  });
+}
+
+/* ---- GM tone line (zero-centered, colored by sign) ---- */
+function gmTone(){const host=document.getElementById("c-gmtone");const w=W(host),h=270,padL=42,padR=16,padT=22,padB=30;
+  const s=svg(host,w,h);const iw=w-padL-padR,ih=h-padT-padB;const n=GM.length;
+  const maxY=30,minY=-15;const X=i=>padL+(i/(n-1))*iw;const Y=v=>padT+((maxY-v)/(maxY-minY))*ih;
+  [-10,0,10,20,30].forEach(v=>{const y=Y(v);s.appendChild(E("line",{x1:padL,y1:y,x2:padL+iw,y2:y,stroke:css("--line")}));
+    s.appendChild(txt(padL-6,y,(v>0?"+":"")+v,{ta:"end",db:"middle",fs:10.5,mono:true,fill:css("--faint")}));});
+  const zy=Y(0);s.appendChild(E("line",{x1:padL,y1:zy,x2:padL+iw,y2:zy,stroke:css("--muted"),"stroke-width":1.2}));
+  DATA.quarters.forEach((q,i)=>{if(q.endsWith("Q1"))s.appendChild(txt(X(i),h-8,q.slice(0,4),{ta:"middle",fs:10.5,mono:true,fill:css("--faint")}));});
+  // event markers
+  const mark=(idx,label,yy)=>{const x=X(idx);s.appendChild(E("line",{x1:x,y1:padT-2,x2:x,y2:padT+ih,stroke:css("--ink"),"stroke-dasharray":"2 3",opacity:.4}));
+    s.appendChild(txt(x,yy,label,{ta:x>padL+iw*.66?"end":"start",fs:10,fw:600,fill:css("--muted")}));};
+  mark(19,"Oct 2023 accident",padT+9);mark(23,"Dec 2024 defunding",padT+23);
+  // area + line split at zero: draw two-color line segments
+  for(let i=1;i<n;i++){const a=GM[i-1],b=GM[i];const col=(a+b)/2>=0?css("--pos"):css("--neg");
+    s.appendChild(E("line",{x1:X(i-1),y1:Y(a),x2:X(i),y2:Y(b),stroke:col,"stroke-width":2.4,"stroke-linecap":"round"}));}
+  GM.forEach((v,i)=>s.appendChild(E("circle",{cx:X(i),cy:Y(v),r:2.2,fill:v>=0?css("--pos"):css("--neg")})));
+  s.appendChild(txt(padL,padT-8,"net tone vs baseline (per 1k)",{fs:10.5,mono:true,fill:css("--faint")}));
+}
+
+/* ---- GM vocab (two lines) ---- */
+function gmVocab(){const host=document.getElementById("c-gmvocab");const w=W(host),h=250,padL=38,padR=16,padT=16,padB=30;
+  const s=svg(host,w,h);const iw=w-padL-padR,ih=h-padT-padB;const n=GMWD.length;
+  const maxY=100;const X=i=>padL+(i/(n-1))*iw;const Y=v=>padT+((maxY-v)/maxY)*ih;
+  [0,25,50,75,100].forEach(v=>{const y=Y(v);s.appendChild(E("line",{x1:padL,y1:y,x2:padL+iw,y2:y,stroke:css("--line")}));
+    s.appendChild(txt(padL-6,y,v+"%",{ta:"end",db:"middle",fs:10.5,mono:true,fill:css("--faint")}));});
+  DATA.quarters.forEach((q,i)=>{if(q.endsWith("Q1"))s.appendChild(txt(X(i),h-8,q.slice(0,4),{ta:"middle",fs:10.5,mono:true,fill:css("--faint")}));});
+  const line=(arr,col)=>{let d="";arr.forEach((v,i)=>d+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+    s.appendChild(E("path",{d,fill:"none",stroke:col,"stroke-width":2.2,"stroke-linejoin":"round","stroke-linecap":"round"}));};
+  line(GMEX,css("--pos"));line(GMWD,css("--neg"));
+  s.appendChild(txt(X(n-1)+4,Y(GMWD[n-1]),"wind-down",{db:"middle",fs:10.5,fw:600,fill:css("--neg"),ta:"end"}));
+  document.getElementById("l-gmvocab").innerHTML=
+    `<span><i class="swatch" style="background:${css('--neg')}"></i>wind-down vocabulary</span>`+
+    `<span><i class="swatch" style="background:${css('--pos')}"></i>expansion vocabulary</span>`;
+}
+
+function fillTable(){const tb=document.getElementById("t-quant");tb.innerHTML="";
+  DATA.quant.forEach(d=>{const tr=document.createElement("tr");
+    const zero=d[3].includes("0 numbers")||d[3].includes("Cruise robotaxi");
+    tr.innerHTML=`<td class="co">${d[0]}</td><td class="num">${d[1]}</td><td>${d[2]}</td><td${zero?' class="zero"':''}>${d[3]}</td>`;
+    tb.appendChild(tr);});}
+
+function renderAll(){pooled();attnLine();quantBar();tvaBar();stanceBar();gmTone();gmVocab();}
+fillTable();renderAll();
+let rt;window.addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(renderAll,150);});
+const mq=window.matchMedia("(prefers-color-scheme:dark)");mq.addEventListener&&mq.addEventListener("change",renderAll);
+new MutationObserver(renderAll).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});
+</script>
+</body>
+</html>
