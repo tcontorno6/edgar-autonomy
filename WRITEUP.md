@@ -159,10 +159,22 @@ Five of six companies write about autonomy measurably more positively than about
 of the same sections; Lyft is indistinguishable. Autonomy passages are also less uncertain
 than baseline for all six (−3 to −10 per 1k).
 
-*Validation (15 most positive + 15 most negative + 15 most hedged passages, read by hand):*
+*Validation (15 most positive + 15 most negative + 15 most hedged passages):*
 - **v2 (final): 36/45 = 80%** (CI 66–89%): negative 13/15, hedged 13/15, positive 10/15.
-- v1 (scoring a ±1-sentence window): 34/45 = 75.6% (61–86%), with negative only 8/15.
+  **Cohen's kappa 0.73** (bootstrap 95% CI 0.57–0.87), over four categories (positive,
+  negative, hedged, off-target).
+- v1 (scoring a ±1-sentence window): 34/45 = 75.6% (61–86%), with negative only 8/15;
+  kappa 0.67 (0.52–0.81).
 - The v2 sample is a fresh draw with no overlap with v1.
+- **This is an upper bound, not an accuracy estimate.** The 45 passages are a stratified
+  sample of extremes, the 15 highest-scoring passages in each class, not a random sample.
+  Extremes are easier to classify than the ambiguous middle of the distribution.
+- **Who rated, and blinding.** The rater was Claude, the AI assistant that built the scorer,
+  not a human. It saw the model's label before deciding (each sample ID names the label, e.g.
+  `most_positive-14`). This was **unblinded self-rating**. All 9 disagreements are passages
+  the rater judged off-target; it never assigned the opposite stance.
+- Kappa is computed on this constructed sample, whose 15/15/15 label mix was fixed by design.
+  It does not generalize to the full corpus.
 
 ### 5. GM: the robotaxi language is a wind-down, and it turns in late 2023
 
@@ -189,7 +201,7 @@ attention in 2024–25 is mostly the language of shutting Cruise down.
 - **Lexicon positive class.** Loughran-McDonald counts *gain*, *benefit* and *collaborat-*
   whatever the subject. With sentence-only scoring, short accounting sentences ("gain from
   the sale of … Yandex Self Driving", GM's "benefit from reduced expenses at Cruise") top
-  the positive ranking; 10/15 positive extremes matched a human read. The same-section
+  the positive ranking; 10/15 positive extremes matched the rater's read. The same-section
   baseline absorbs much of this, because the surrounding text uses the same accounting
   words, but positive-tone levels should be read with care.
 - **Wording vs events.** A lexicon measures language, not facts. GM's December 2024 release
@@ -210,10 +222,12 @@ attention in 2024–25 is mostly the language of shutting Cruise down.
 | M1 | CIKs vs EDGAR; fetch and clean | 6/6 verified; 0 errors |
 | M2 | fresh 90-hit sample, frozen rules | 1.1% wrong-sense (0.2–6.0); 84.4% strict precision (75.6–90.5) |
 | M3 | seeded 20-row sample, frozen v1 | values 100% (84–100); value + claim 95% (76–99); all qualifiers 80% (58–92); citation check 0 failures |
-| M4 | 45 extremes, fresh v2 draw | 80% match (66–89); v1 was 75.6% |
+| M4 | 45 extremes (15 per class, not random), fresh v2 draw, unblinded self-rating by Claude | 80% match (66–89), an upper bound; kappa 0.73 (0.57–0.87); v1 was 75.6% |
 
 - **One coder.** All labels were set by one reviewer (Claude, with Tyler approving each
-  rule change). There is no inter-rater agreement measure.
+  rule change). There is no inter-rater agreement measure. For M4 the rater also saw the
+  model's label before deciding; the kappa above is model-vs-rater agreement, not
+  inter-rater agreement.
 - **Bootstrap CIs on stance** resample passages independently. Boilerplate repeats across
   filings make passages correlated, so the intervals are somewhat narrow.
 - **Small samples.** Alphabet (22 non-boilerplate passages, 1 number) and Amazon (36, 4)

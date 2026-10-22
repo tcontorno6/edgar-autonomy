@@ -226,16 +226,19 @@ footer a{color:var(--accent)}
               <tr><td>Mentions — strict precision</td><td class="num">84%</td></tr>
               <tr><td>Numbers — value correct</td><td class="num">100%</td></tr>
               <tr><td>Numbers — value + claim</td><td class="num">95%</td></tr>
-              <tr><td>Stance labels — vs human</td><td class="num">80%</td></tr>
+              <tr><td>Stance labels — agreement on 45 extremes (upper bound)</td><td class="num">80%</td></tr>
+              <tr><td>Stance labels — Cohen's κ, same 45</td><td class="num">0.73</td></tr>
             </tbody>
           </table>
         </div>
+        <p class="cap" style="font-size:12px;color:var(--muted);margin:10px 0 0">Stance rows: unblinded self-rating by Claude on a constructed sample of extremes, not a random draw. See “Read with these in mind”.</p>
       </div>
     </div>
     <div class="panel" style="margin-top:18px">
       <h3>Read with these in mind</h3>
       <ul>
-        <li><b>Lexicon positive class.</b> Loughran-McDonald counts <i>gain</i> and <i>benefit</i> regardless of subject; short accounting sentences can score as upbeat. Positive-tone levels should be read with care (10/15 positive extremes matched a human).</li>
+        <li><b>Lexicon positive class.</b> Loughran-McDonald counts <i>gain</i> and <i>benefit</i> regardless of subject; short accounting sentences can score as upbeat. Positive-tone levels should be read with care (10/15 positive extremes matched the rater's read).</li>
+        <li><b>Stance validation is an upper bound, and it was not done by a human.</b> The 45 passages were the 15 scored most positive, the 15 most negative and the 15 most hedged: a stratified sample of extremes, not a random one. Extremes are easier to classify than the ambiguous middle, so 80% agreement (36/45, CI 66–89%) is an upper bound. The rater was Claude, the AI assistant that built the scorer, and it saw the model's label before deciding. This was unblinded self-rating. Cohen's κ is <span class="mono">0.73</span> (bootstrap 95% CI 0.57–0.87), over four categories (positive, negative, hedged, off-target). It is computed on this constructed sample, whose 15/15/15 label mix was fixed by design, and does not generalize to the full corpus. All 9 disagreements are passages the rater judged off-target; it never assigned the opposite stance.</li>
         <li><b>Text only.</b> Earnings-call transcripts, where most operational numbers are spoken, are out of scope. This measures what reaches the legal record.</li>
         <li><b>Chart-only figures excluded.</b> Tesla's paid Robotaxi miles appear only as chart axes; the extractor rejects them rather than invent a value.</li>
         <li><b>Small samples.</b> Alphabet (1 number) and Amazon (4) are descriptive, not trends. One reviewer set all labels; there is no inter-rater measure.</li>
