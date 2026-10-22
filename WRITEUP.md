@@ -257,6 +257,21 @@ GM's high M2 attention in 2024–25 coincides with this negative turn and with t
 wind-down GM announced in December 2024, but the vocabulary test fixed in advance does not
 show that the language itself is wind-down talk.
 
+**Tone, tested out of sample: not possible with this method.** The tone drop is the part of this
+finding that stands, but it is n = 1, retrospective, and the 2023Q4 cut was read off the series.
+A pre-registered test on three other AV exits (`prereg/exit_tone_v1/`) stopped at the
+feasibility step. Announcement dates, from the filings: Uber's ATG sale 2020-12-07, Lyft's
+Level 5 sale 2021-04-26, Ford's Argo AI wind-down 2022-10-26.
+- In GM's view (robotaxi-service passages outside risk factors and legends), the 13 quarters
+  around each exit hold 7 (Uber), 7 (Lyft) and 1 (Ford) passages, never more than one filing a
+  quarter. Uber's and Lyft's contain no negative or positive words, so their tone is undefined.
+- The M2 lexicon misses most of the exit text: outside risk factors and legends, 74% of Uber's
+  ATG sentences and 53% of Ford's Argo sentences fall in no autonomy passage.
+- On the broader all-autonomy view, Ford has 26 filings on each side of the proposed comparison
+  (about a fifth of GM's words per side); Uber and Lyft stay thin, their earlier windows cut
+  short by the 2019 IPOs. Moving to that view would change the method so the test could run,
+  so it was not run, and Ford's tone was never computed.
+
 ## Limitations
 
 - **Lexicon positive class.** Loughran-McDonald counts *gain*, *benefit* and *collaborat-*
