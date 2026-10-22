@@ -71,7 +71,9 @@ forward-looking measure (*intend, expect, plan, anticipate*).
   metric is reported by section; (b) every rate is also reported **relative to the
   non-autonomy text of the same section in the same filings**.
 
-All analysis is local and free: no paid API was used at any step.
+The pipeline runs locally with free tools: no paid API was used at any step. Claude, the AI
+assistant that built it, picked the list v3 terms (Finding 5) and labeled the stance
+validation sample (Finding 4).
 
 ## Findings
 
@@ -173,20 +175,23 @@ than baseline for all six (−3 to −10 per 1k).
   not a human. It saw the model's label before deciding (each sample ID names the label, e.g.
   `most_positive-14`). This was **unblinded self-rating**. All 9 disagreements are passages
   the rater judged off-target; it never assigned the opposite stance.
+- Two of the 15 hedged passages were picked partly because the scorer counted "May Mobility"
+  as the modal "may"; that bug was fixed after this check.
 - Kappa is computed on this constructed sample, whose 15/15/15 label mix was fixed by design.
   It does not generalize to the full corpus.
 
-### 5. GM: the robotaxi language turns sharply negative from late 2023; a word test fixed in advance does not confirm it as wind-down talk
+### 5. GM: the robotaxi language is far more negative from late 2023 than before; a word test fixed in advance does not confirm it as wind-down talk
 
 GM's robotaxi passages, outside risk factors and legends (565 passages in 58 filings):
 - **Tone vs baseline:** about **+20 per 1k** through 2021, **+5 to +10** in 2022–23, and
   **negative from 2023Q4** (−3 to −10 in most quarters since).
+- **Expansion vocabulary:** from ~30% to 7%.
 
 **Before vs from 2023Q4**, split by filing date (filed by 2023-09-30 vs from 2023-10-01).
-Rates are word-level (category words summed over passages ÷ scored words summed × 1,000);
-95% intervals resample whole filings (10,000 draws):
+Rates are word-level (category words summed over passages ÷ scored words summed × 1,000) and
+raw, not relative to the surrounding text; 95% intervals resample whole filings (10,000 draws):
 
-| | Filings | Passages | Negative /1k | Net tone /1k |
+| | Filings | Passages | Negative /1k | Raw net tone /1k |
 |---|---|---|---|---|
 | Before 2023Q4 | 33 | 319 | **7.2** (5.8–8.8) | +1.8 (−0.5 to 4.4) |
 | From 2023Q4 | 25 | 246 | **19.6** (16.4–22.1) | −16.5 (−19.3 to −13.0) |
@@ -209,7 +214,7 @@ Rates are word-level (category words summed over passages ÷ scored words summed
 
 **By year** (word-level; filing-resampled 95% intervals; ⚑ = fewer than 5 filings):
 
-| Filed | Filings | Passages | Negative /1k | Net tone /1k | Wind-down share, list v3 (fixed in advance) | Wind-down share, original list (post-hoc) |
+| Filed | Filings | Passages | Negative /1k | Raw net tone /1k | Wind-down share, list v3 (fixed in advance) | Wind-down share, original list (post-hoc) |
 |---|---|---|---|---|---|---|
 | 2019 | 10 | 81 | 5.4 (2.0–7.6) | +4.5 (1.2–11.4) | 14% (6–36) | 0% (0–28)† |
 | 2020 | 8 | 56 | 8.2 (6.3–11.2) | +6.3 (0.9–11.8) | 14% (11–25) | 0% (0–32)† |
@@ -232,7 +237,7 @@ Lyft's Level 5 sale, whose filings say "sale" and "divestiture".
 
 List v3 replaces it as the test. It was derived only from the filings for three non-GM exits
 (Uber's sale of ATG to Aurora, Lyft's sale of Level 5 to Woven Planet, Ford's exit from Argo
-AI): 27 documents, 480 passages. One model given only those passages picked the terms;
+AI): 27 documents, 480 passages. One Claude subagent, given only those passages, picked the terms;
 mechanical filters left 41. The protocol was committed publicly before anything ran, and the
 list was frozen, hashed and published before GM was scored (`prereg/winddown_v3/`).
 
@@ -243,9 +248,10 @@ list was frozen, hashed and published before GM was scored (`prereg/winddown_v3/
 - List v3 is a weak detector, so this is a failed confirmation, not evidence against a
   wind-down. Only 10 of its 41 terms ever appear in GM's robotaxi passages. The two most
   common, *eliminated* and *transferred*, are accounting words that appear every year from
-  2019. It also matches 30–37% of Tesla's autonomy passages, though Tesla never exited, and 0%
-  of Alphabet's and Amazon's. A secondary version with a looser filter (adds "acquisition")
-  gives +7.2 points (2.1–12.0); it was not the declared test.
+  2019 to 2025. On the same robotaxi view from 2023Q4 it matches 11.4% (4.2–17.5) of Tesla's
+  passages, though Tesla never exited (30–37% of Tesla's wider autonomy passages), and 0% of
+  Alphabet's and Amazon's (9 and 7 passages). A secondary version with a looser filter (adds
+  "acquisition") gives +7.2 points (2.1–12.0); it was not the declared test.
 
 GM's high M2 attention in 2024–25 coincides with this negative turn and with the Cruise
 wind-down GM announced in December 2024, but the vocabulary test fixed in advance does not
@@ -261,16 +267,18 @@ show that the language itself is wind-down talk.
   words, but positive-tone levels should be read with care.
 - **Wording vs events.** A lexicon measures language, not facts. GM's December 2024 release
   frames the Cruise wind-down positively. Wind-down and expansion vocabulary are reported
-  next to tone for that reason. Both original vocabularies were written after reading GM's
-  filings; only the wind-down list has an out-of-sample version (list v3), and it does not
-  confirm the original.
+  next to tone for that reason. The original wind-down list was written after reading GM's
+  filings; its out-of-sample version (list v3) does not confirm it. The expansion list has no
+  version fixed in advance.
 - **Chart-only figures were deliberately not extracted.** Tesla's paid Robotaxi miles and
   FSD-miles-by-version appear only as chart images. In filing text they are axis ticks,
   which the extractor rejects rather than guessing. The quantification count is a count
   of numbers stated **in text**.
 - **Risk-factor control.** Absolute tone is dominated by risk factors (40% of passages)
   and forward-looking legends. Every stance number in the findings is section-tagged and
-  baseline-relative; absolute rows are kept only to show the trap. The section tagger was
+  baseline-relative; absolute rows are kept only to show the trap. The exception is Finding
+  5's before/after and by-year table, which reports raw rates (its chart is baseline-relative).
+  The section tagger was
   spot-checked at 29/30.
 - **Validation accuracies by phase:**
 
@@ -286,7 +294,8 @@ show that the language itself is wind-down talk.
   model's label before deciding; the kappa above is model-vs-rater agreement, not
   inter-rater agreement.
 - **Bootstrap CIs on stance** resample passages independently. Boilerplate repeats across
-  filings make passages correlated, so the intervals are somewhat narrow.
+  filings make passages correlated, so the intervals are somewhat narrow. Finding 5's
+  intervals instead resample whole filings.
 - **Small samples.** Alphabet (22 non-boilerplate passages, 1 number) and Amazon (36, 4)
   are too small for quarterly trends; read them pooled.
 - **Coverage.** Earnings-call transcripts, where most operational numbers are spoken, are

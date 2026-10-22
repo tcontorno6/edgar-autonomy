@@ -88,3 +88,20 @@ as the result.
   + 4), not 28; the 28th document is the Ford FY2021 reference 10-K. EDGAR full-text search
   cross-check: **31** hits, not 34, all included. Anchor hits inside tables: **40** across the
   27 exit documents, not 36 (the reference 10-K adds 3).
+
+## Deviations from the order of record (added after GM scoring)
+
+- **Same session for Phases B and C.** `PHASE_A.md` and `README.md` (step 4) say a separate
+  session applies the frozen list. Phases B and C were run by the same Desktop session that ran
+  Phase A, in a commit on top of freeze commit 081dfac, after this record was pushed. B0 re-checked
+  the frozen file's sha256 and the committed matcher before scoring; the list was not edited.
+- **Full file mirrored after scoring.** `README.md` step 3 planned to mirror the full file here
+  before GM scoring. At 132,499 bytes it was over the thread's 64 KiB message limit, so before
+  scoring only this record (freeze commit, sha256 and all 41 primary terms) was committed here
+  (7cee60a). The file itself arrived in three hash-checked parts after scoring; its sha256 equals
+  the value above.
+- **Executor context.** As recorded under Phase A, the Desktop session had opened its own notes,
+  which contain earlier GM tone and wind-down findings but no word list, before Phase A began.
+  `README.md` step 2 says that session never receives GM results.
+- **Permutation seed.** The plan fixes the bootstrap seed only; the permutation tests reused
+  `default_rng(20261022)`, with a new generator per test.

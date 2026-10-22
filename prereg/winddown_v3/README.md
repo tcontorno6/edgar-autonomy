@@ -16,3 +16,8 @@ Order of record (each step is a separate commit or a server-timestamped message)
 3. The frozen file is mirrored here, byte-identical, before any GM scoring starts.
 4. A separate session applies the frozen list to GM following `PHASE_BC.md`. The list is not
    edited after this point. If it does not fire on GM, that is the published result.
+
+What happened differs from this order in three places, all listed under "Deviations from the order
+of record" in `FREEZE_RECORD.md`: the same Desktop session ran Phase A and the GM scoring, that
+session had seen earlier GM findings (but no word list) before Phase A, and the full frozen file
+was mirrored here after scoring (its hash and all 41 terms were committed before).
