@@ -76,3 +76,15 @@ F1 dropped 0, F2 dropped 0, F3 dropped 1 ("acquisition", 7/125 = 0.056).
 
 The list is not edited after this point. If it does not separate GM's periods, that is reported
 as the result.
+
+## Mirror and corrections (added after GM scoring)
+
+- `frozen_winddown_terms_v3.json` in this folder was received from the Desktop in three parts,
+  each checked against its own sha256, and reassembled here: 132,499 bytes, sha256
+  `b884c0c7f75e4a84fde25bd0aecf6895d23a4152046334a0147f088044ca5d74`, identical to the value
+  above. Inside the file, `primary_terms` holds the 41-term list that was applied to GM.
+- Three counts in the Inputs section above, copied from an interim report, were wrong; the JSON
+  is the record and nothing in the frozen list depends on them. Exit documents: **27** (12 + 11
+  + 4), not 28; the 28th document is the Ford FY2021 reference 10-K. EDGAR full-text search
+  cross-check: **31** hits, not 34, all included. Anchor hits inside tables: **40** across the
+  27 exit documents, not 36 (the reference 10-K adds 3).

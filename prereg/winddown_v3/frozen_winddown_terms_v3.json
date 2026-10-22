@@ -1,0 +1,5185 @@
+{
+ "created_utc": "2026-10-22T02:50:20Z",
+ "protocol_sha256": "fabc7fe4de0f8ecda41a0bb144719c238011d0e7c2f077d6876eaee215897c20",
+ "protocol_reference": "tcontorno6/edgar-autonomy@ed97fa91fc67ffabbf295339551c3c3b9935ce40:prereg/winddown_v3/PHASE_A.md; text delivered inline by the coordinator; hash identical to the committed copy",
+ "exits": {
+  "E1": {
+   "definition": "Uber's sale of its Advanced Technologies Group (ATG) to Aurora",
+   "company": "UBER",
+   "announced": "2020-12-07",
+   "close_fiscal_year": 2021,
+   "windows": {
+    "eight_k_window": [
+     "2020-11-30",
+     "2022-02-24"
+    ],
+    "periodic_window": [
+     "2020-12-07",
+     "2022-02-24"
+    ]
+   },
+   "sources": [
+    {
+     "accession": "0001552781-20-000598",
+     "form": "8-K",
+     "doc": "e20603_uber-8k.htm",
+     "doc_type": "8-K",
+     "filed": "2020-12-07",
+     "period_of_report": "2020-12-07",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278120000598/e20603_uber-8k.htm",
+     "sha256_raw": "62728c3c59dc0ce92a86c48adb245df7469c13be28e617f5d10f75e9c97b98f2"
+    },
+    {
+     "accession": "0001552781-21-000010",
+     "form": "8-K",
+     "doc": "e21016_uber-8k.htm",
+     "doc_type": "8-K",
+     "filed": "2021-01-19",
+     "period_of_report": "2021-01-19",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000155278121000010/e21016_uber-8k.htm",
+     "sha256_raw": "c85fe101bbcebe9bf73c39b51511f7bb7c6c0794fe8ef5ea27434d4e13cdb568"
+    },
+    {
+     "accession": "0001543151-21-000008",
+     "form": "8-K",
+     "doc": "uberq420earningspressrelea.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-02-10",
+     "period_of_report": "2021-02-10",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000008/uberq420earningspressrelea.htm",
+     "sha256_raw": "b8acfa1836f0a580e10a6d44c1926b7e8b27a1310e9577b4eb87e569ba1c1a7f"
+    },
+    {
+     "accession": "0001543151-21-000014",
+     "form": "10-K",
+     "doc": "uber-20201231.htm",
+     "doc_type": "10-K",
+     "filed": "2021-03-01",
+     "period_of_report": "2020-12-31",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000014/uber-20201231.htm",
+     "sha256_raw": "c246521a472ceb3305f4e3e60e7ec85a65c679ea8864d135c828b0b11040cd0d"
+    },
+    {
+     "accession": "0001543151-21-000024",
+     "form": "8-K",
+     "doc": "uberq121earningspressrelea.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-05-05",
+     "period_of_report": "2021-05-05",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000024/uberq121earningspressrelea.htm",
+     "sha256_raw": "67266d81f83c84456bf37fbe8b6858447d8a37018c92bd8f184a26d5d3c69db1"
+    },
+    {
+     "accession": "0001543151-21-000029",
+     "form": "10-Q",
+     "doc": "uber-20210331.htm",
+     "doc_type": "10-Q",
+     "filed": "2021-05-06",
+     "period_of_report": "2021-03-31",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000029/uber-20210331.htm",
+     "sha256_raw": "1d7c12684aceb79606fb53919784fecb763af4e97bee9d02c1a92bb2cd037029"
+    },
+    {
+     "accession": "0001543151-21-000035",
+     "form": "8-K",
+     "doc": "uberq221earningspressrelea.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-08-04",
+     "period_of_report": "2021-08-04",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000035/uberq221earningspressrelea.htm",
+     "sha256_raw": "4c02f2f2bf22560962301864e3c5a048aa1a4eb258161a406cb1287d71db87cc"
+    },
+    {
+     "accession": "0001543151-21-000038",
+     "form": "10-Q",
+     "doc": "uber-20210630.htm",
+     "doc_type": "10-Q",
+     "filed": "2021-08-05",
+     "period_of_report": "2021-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000038/uber-20210630.htm",
+     "sha256_raw": "3605875a961aae71c2dbf47e27842d35fe12ffb505cd3793e505e74d6fe91f43"
+    },
+    {
+     "accession": "0001543151-21-000043",
+     "form": "8-K",
+     "doc": "uberq321earningspressrelea.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-11-04",
+     "period_of_report": "2021-11-04",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000043/uberq321earningspressrelea.htm",
+     "sha256_raw": "92704c179642a906fa549038bacf8883d004948ae81f8f338635825c16c0df59"
+    },
+    {
+     "accession": "0001543151-21-000047",
+     "form": "10-Q",
+     "doc": "uber-20210930.htm",
+     "doc_type": "10-Q",
+     "filed": "2021-11-09",
+     "period_of_report": "2021-09-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315121000047/uber-20210930.htm",
+     "sha256_raw": "50d013132edf1e7b8db733f0cd927ef40d469c1d05269f21d84d93ab34d28a6a"
+    },
+    {
+     "accession": "0001543151-22-000004",
+     "form": "8-K",
+     "doc": "uberq421earningspressrelea.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2022-02-09",
+     "period_of_report": "2022-02-09",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315122000004/uberq421earningspressrelea.htm",
+     "sha256_raw": "a0515100b1947dfdb0bc210b72ca310a81cffa9a6101ef3d13bed09dbbe4163c"
+    },
+    {
+     "accession": "0001543151-22-000008",
+     "form": "10-K",
+     "doc": "uber-20211231.htm",
+     "doc_type": "10-K",
+     "filed": "2022-02-24",
+     "period_of_report": "2021-12-31",
+     "url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315122000008/uber-20211231.htm",
+     "sha256_raw": "3e050f1e3168b826b58fe01eda592b67382833385211f43814a37d5f66c26656"
+    }
+   ],
+   "eight_k_docs_without_anchor": 36
+  },
+  "E2": {
+   "definition": "Lyft's sale of its Level 5 unit to Woven Planet (Toyota)",
+   "company": "LYFT",
+   "announced": "2021-04-26",
+   "close_fiscal_year": 2021,
+   "windows": {
+    "eight_k_window": [
+     "2021-04-19",
+     "2022-02-28"
+    ],
+    "periodic_window": [
+     "2021-04-26",
+     "2022-02-28"
+    ]
+   },
+   "sources": [
+    {
+     "accession": "0001759509-21-000020",
+     "form": "8-K",
+     "doc": "lyft-20210426.htm",
+     "doc_type": "8-K",
+     "filed": "2021-04-26",
+     "period_of_report": "2021-04-26",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000020/lyft-20210426.htm",
+     "sha256_raw": "d89be74d210bdac880d18d931cc45e7c68ed3cb2cdc3989911737bc6137cc8d3"
+    },
+    {
+     "accession": "0001759509-21-000020",
+     "form": "8-K",
+     "doc": "pressrelease42621.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-04-26",
+     "period_of_report": "2021-04-26",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000020/pressrelease42621.htm",
+     "sha256_raw": "fc537c120b48c0e9beae1c670b85ce094c607035a3208f73ae590e42d8842e5a"
+    },
+    {
+     "accession": "0001759509-21-000020",
+     "form": "8-K",
+     "doc": "lyftautonomousslides.htm",
+     "doc_type": "EX-99.2",
+     "filed": "2021-04-26",
+     "period_of_report": "2021-04-26",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000020/lyftautonomousslides.htm",
+     "sha256_raw": "e7bc4f99cf0a1752b2ebc0c339f2c2dbb1d2b408c52c72788878bd987f01e1a3"
+    },
+    {
+     "accession": "0001759509-21-000030",
+     "form": "8-K",
+     "doc": "lyft-2021331xpressreleaseq.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-05-04",
+     "period_of_report": "2021-05-04",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000030/lyft-2021331xpressreleaseq.htm",
+     "sha256_raw": "78116cfa65882447f06977ba2aa6e8239c696e6eb2bc7540cf3251d3a337e276"
+    },
+    {
+     "accession": "0001759509-21-000034",
+     "form": "10-Q",
+     "doc": "lyft-20210331.htm",
+     "doc_type": "10-Q",
+     "filed": "2021-05-06",
+     "period_of_report": "2021-03-31",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000034/lyft-20210331.htm",
+     "sha256_raw": "89a88f2409afecfca323358f6e6b6e20d9583a65b4141be4b9ab6c11300b8750"
+    },
+    {
+     "accession": "0001759509-21-000042",
+     "form": "8-K",
+     "doc": "lyft-20210630xpressrelease.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-08-03",
+     "period_of_report": "2021-08-03",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000042/lyft-20210630xpressrelease.htm",
+     "sha256_raw": "f9d86f9c2faa81ae78677bcd4e96fa56f6e6d196e8d9e245962d8df1fd95df2a"
+    },
+    {
+     "accession": "0001759509-21-000045",
+     "form": "10-Q",
+     "doc": "lyft-20210630.htm",
+     "doc_type": "10-Q",
+     "filed": "2021-08-05",
+     "period_of_report": "2021-06-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000045/lyft-20210630.htm",
+     "sha256_raw": "708df4ab57e9d24a4a0c1d22b447ae691456398bba14406933d93f795c8b9b9d"
+    },
+    {
+     "accession": "0001759509-21-000050",
+     "form": "8-K",
+     "doc": "lyft-20210930xpressrelease.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2021-11-02",
+     "period_of_report": "2021-11-02",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000050/lyft-20210930xpressrelease.htm",
+     "sha256_raw": "fbc8958153ba4051db6c0b126cc63a41536e700e24b10ec13761e9a1acb423d0"
+    },
+    {
+     "accession": "0001759509-21-000054",
+     "form": "10-Q",
+     "doc": "lyft-20210930.htm",
+     "doc_type": "10-Q",
+     "filed": "2021-11-04",
+     "period_of_report": "2021-09-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950921000054/lyft-20210930.htm",
+     "sha256_raw": "f83ad22e42af91e00e03fe8e97aecfa00d025b993f2ad5f154f70513cdcc9c2b"
+    },
+    {
+     "accession": "0001759509-22-000005",
+     "form": "8-K",
+     "doc": "lyft-2021x12x31pressreleas.htm",
+     "doc_type": "EX-99.1",
+     "filed": "2022-02-08",
+     "period_of_report": "2022-02-08",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950922000005/lyft-2021x12x31pressreleas.htm",
+     "sha256_raw": "f57df3d1218a1531efc969ba54c4d10b256fcb35fdd5ecb07de21c8006deaf55"
+    },
+    {
+     "accession": "0001759509-22-000016",
+     "form": "10-K",
+     "doc": "lyft-20211231.htm",
+     "doc_type": "10-K",
+     "filed": "2022-02-28",
+     "period_of_report": "2021-12-31",
+     "url": "https://www.sec.gov/Archives/edgar/data/1759509/000175950922000016/lyft-20211231.htm",
+     "sha256_raw": "d9b72e08410483278a53d07d5f19b8c07c005d6070c2a619244d3952c7db773c"
+    }
+   ],
+   "eight_k_docs_without_anchor": 9
+  },
+  "E3": {
+   "definition": "Ford's exit from Argo AI",
+   "company": "F",
+   "announced": "2022-10-26",
+   "close_fiscal_year": 2022,
+   "windows": {
+    "eight_k_window": [
+     "2022-10-19",
+     "2023-02-03"
+    ],
+    "periodic_window": [
+     "2022-10-26",
+     "2023-02-03"
+    ]
+   },
+   "sources": [
+    {
+     "accession": "0000037996-22-000072",
+     "form": "8-K",
+     "doc": "exhibit99tooctober262022.htm",
+     "doc_type": "EX-99",
+     "filed": "2022-10-26",
+     "period_of_report": "2022-10-26",
+     "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799622000072/exhibit99tooctober262022.htm",
+     "sha256_raw": "3aee6c6fcb7bb435c4030e05485e2dc6f554f1c371bb2c45dafdc4862b094123"
+    },
+    {
+     "accession": "0000037996-22-000073",
+     "form": "10-Q",
+     "doc": "f-20220930.htm",
+     "doc_type": "10-Q",
+     "filed": "2022-10-27",
+     "period_of_report": "2022-09-30",
+     "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799622000073/f-20220930.htm",
+     "sha256_raw": "27d2647231fcec5b1c9c390170d04720977bb54f82dbd002c366e3c14b46d59b"
+    },
+    {
+     "accession": "0000037996-23-000011",
+     "form": "8-K",
+     "doc": "exhibit99tofordfebruary2.htm",
+     "doc_type": "EX-99",
+     "filed": "2023-02-02",
+     "period_of_report": "2023-02-02",
+     "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799623000011/exhibit99tofordfebruary2.htm",
+     "sha256_raw": "504d710c3228de437ea846208fead306c2c5c0715367ab93add66aa5d48277db"
+    },
+    {
+     "accession": "0000037996-23-000012",
+     "form": "10-K",
+     "doc": "f-20221231.htm",
+     "doc_type": "10-K",
+     "filed": "2023-02-03",
+     "period_of_report": "2022-12-31",
+     "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799623000012/f-20221231.htm",
+     "sha256_raw": "5d555c1ee61169c3c641749dd878c3fbfa454730c39b1ac1cda23e2e496ce178"
+    }
+   ],
+   "eight_k_docs_without_anchor": 13
+  }
+ },
+ "reference_document": {
+  "company": "F",
+  "accession": "0000037996-22-000013",
+  "form": "10-K",
+  "doc": "f-20211231.htm",
+  "filed": "2022-02-04",
+  "period_of_report": "2021-12-31",
+  "url": "https://www.sec.gov/Archives/edgar/data/37996/000003799622000013/f-20211231.htm",
+  "sha256_raw": "228c7dd2390a2c69f4b460cae752666eff41c28415d705f3fa95a9b23ea1ea9a"
+ },
+ "cik_verification": {
+  "UBER": {
+   "cik": "0001543151",
+   "tickers_json": [
+    [
+     "UBER",
+     "Uber Technologies, Inc"
+    ]
+   ],
+   "submissions_name": "Uber Technologies, Inc",
+   "pages": [
+    "CIK0001543151-submissions-001.json"
+   ],
+   "n_filings": 1343
+  },
+  "LYFT": {
+   "cik": "0001759509",
+   "tickers_json": [
+    [
+     "LYFT",
+     "Lyft, Inc."
+    ]
+   ],
+   "submissions_name": "Lyft, Inc.",
+   "pages": [],
+   "n_filings": 871
+  },
+  "F": {
+   "cik": "0000037996",
+   "tickers_json": [
+    [
+     "F",
+     "FORD MOTOR CO"
+    ],
+    [
+     "F-PB",
+     "FORD MOTOR CO"
+    ],
+    [
+     "F-PC",
+     "FORD MOTOR CO"
+    ],
+    [
+     "F-PD",
+     "FORD MOTOR CO"
+    ]
+   ],
+   "submissions_name": "FORD MOTOR CO",
+   "pages": [
+    "CIK0000037996-submissions-001.json",
+    "CIK0000037996-submissions-002.json"
+   ],
+   "n_filings": 4447
+  }
+ },
+ "code": {
+  "cleaner": {
+   "module": "scripts/clean_index.py",
+   "function": "clean_doc (steps: decode_bytes, strip_sgml_wrapper, extract_text, filter_lines(HEADER_MAX_LEN, HEADER_MIN_REPEATS)); called step for step via data/winddown_v3/scripts/clean_seg.py:clean_html without writing to the corpus",
+   "blob": "aab5b46486523b05f19a54faf4c44310d7c992b4",
+   "dependency": {
+    "module": "vendor/clean.py",
+    "functions": "decode_bytes, strip_sgml_wrapper, extract_text, filter_lines",
+    "blob": "2354339976b53f6b504970352e4537468173a050"
+   }
+  },
+  "splitter": {
+   "module": "scripts/tone.py",
+   "function": "sentences",
+   "blob": "f8084a5cbfb233c9a8b2ceb5772842316f5a4998"
+  },
+  "section_tagger": {
+   "module": "scripts/tone.py",
+   "function": "section_spans + section_at",
+   "blob": "f8084a5cbfb233c9a8b2ceb5772842316f5a4998"
+  }
+ },
+ "matcher": "data/winddown_v3/scripts/common.py (normalize, term_regex, matches)",
+ "thresholds": {
+  "primary": 0.05,
+  "secondary": [
+   0.02,
+   0.1
+  ]
+ },
+ "counts": {
+  "exit_passages": 480,
+  "reference_passages": {
+   "UBER": {
+    "rows": 67,
+    "mean_words": 59.0
+   },
+   "LYFT": {
+    "rows": 46,
+    "mean_words": 65.8
+   },
+   "F": {
+    "rows": 12,
+    "mean_words": 51.8
+   },
+   "total": 125
+  },
+  "subagent_candidate_lines": 49,
+  "after_F1_and_dedup": 42,
+  "after_F2": 42,
+  "dropped": {
+   "F1": 0,
+   "F1_dedup_merged": 7,
+   "F2": 0,
+   "F3": 1
+  },
+  "primary": 41
+ },
+ "primary_terms": [
+  {
+   "term": "acquire",
+   "regex": "(?<![a-z0-9])acquire(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 5,
+    "E2": 1
+   },
+   "reference_rate": 0.008,
+   "reference_pooled": "1/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 1,
+     "denominator": 46,
+     "rate": 0.021739
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1",
+    "E2"
+   ],
+   "subagent_quote": [
+    "of merger transactions, Aurora will acquire ATG. [fragment row]",
+    "to acquire Lyft’s self-driving car division [fragment row]"
+   ]
+  },
+  {
+   "term": "merger transactions",
+   "regex": "(?<![a-z0-9])merger[ \\-]+transactions(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 5
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "In December 2020, we and Apparate entered into a definitive agreement with Aurora and certain other parties, pursuant to which, through a series of merger transactions, we will sell Apparate to Aurora."
+   ]
+  },
+  {
+   "term": "sell",
+   "regex": "(?<![a-z0-9])sell(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 8
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "In December 2020, we and Apparate entered into a definitive agreement with Aurora and certain other parties, pursuant to which, through a series of merger transactions, we will sell Apparate to Aurora."
+   ]
+  },
+  {
+   "term": "sale",
+   "regex": "(?<![a-z0-9])sale(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2",
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E1": 129,
+    "E2": 23,
+    "E3": 3
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1",
+    "E2",
+    "E3"
+   ],
+   "subagent_quote": [
+    "On December 7, 2020, we announced the sale of Apparate USA LLC (“ATG Business” or “Apparate”), our subsidiary focused on the development and commercialization of autonomous vehicle technologies, to Aurora Innovation, Inc. (“Aurora”).",
+    "On April 26, 2021, Lyft, Inc. (the “Company” or “Lyft”), announced that it had entered into a definitive agreement for the sale of its Level 5 self-driving vehicle division.",
+    "As a result of this transaction, which included $500 million of proceeds from the sale to VW of a portion of our interest in Argo AI, we deconsolidated Argo AI, remeasured our retained investment in the entity at fair value, and, net of our carrying value in Argo’s net assets, recognized a $3.5 billion pre-tax gain in Other income/(loss), net."
+   ]
+  },
+  {
+   "term": "completed the sale",
+   "regex": "(?<![a-z0-9])completed[ \\-]+the[ \\-]+sale(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 30
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "On January 19, 2021, we completed the sale of our ATG Business to Aurora."
+   ]
+  },
+  {
+   "term": "previously announced sale",
+   "regex": "(?<![a-z0-9])previously[ \\-]+announced[ \\-]+sale(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 22
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "On January 19, 2021, we completed the previously announced sale of our ATG Business to Aurora."
+   ]
+  },
+  {
+   "term": "sold",
+   "regex": "(?<![a-z0-9])sold(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 12
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "In January 2021, we sold our ATG Business to Aurora."
+   ]
+  },
+  {
+   "term": "sales",
+   "regex": "(?<![a-z0-9])sales(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 2,
+    "E2": 1
+   },
+   "reference_rate": 0.008,
+   "reference_pooled": "1/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 1,
+     "denominator": 46,
+     "rate": 0.021739
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "Non-GAAP research and development declined $15 million QoQ and $151 million YoY, driven by lower employee headcount costs, which was primarily driven by the sales of JUMP and our ATG business in the second quarter of 2020 and first quarter of 2021, respectively."
+   ]
+  },
+  {
+   "term": "divesting",
+   "regex": "(?<![a-z0-9])divesting(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "“We made some big moves this year, acquiring businesses like Cornershop and Postmates while divesting others like ATG and Jump, and structurally lowering our cost base,” said Nelson Chai, CFO."
+   ]
+  },
+  {
+   "term": "divestiture",
+   "regex": "(?<![a-z0-9])divestiture(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 64,
+    "E2": 39
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1",
+    "E2"
+   ],
+   "subagent_quote": [
+    "We announced the divestiture of our Autonomous Technologies Group (“ATG”) to Aurora Innovation.",
+    "On April 26, 2021, the Company signed a definitive agreement with Woven Planet, a subsidiary of Toyota Motor Corporation, for divestiture of certain assets related to the Company’s self-driving vehicle division, Level 5, as well as non-exclusive commercial agreements for the utilization of Lyft system and fleet data to accelerate the safety and commercialization of the automated-driving vehicles that Woven Planet will develop."
+   ]
+  },
+  {
+   "term": "divestitures",
+   "regex": "(?<![a-z0-9])divestitures(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 35,
+    "E2": 7
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1",
+    "E2"
+   ],
+   "subagent_quote": [
+    "•In 2021, divestitures consisted of the sale of our ATG Business, a subsidiary focused on the development and commercialization of autonomous vehicle technology, to Aurora.",
+    "Refer to Note 4 \"Divestitures\" to the consolidated financial statements for information regarding the divestiture of certain assets related to our self-driving vehicles division, Level 5."
+   ]
+  },
+  {
+   "term": "business divestitures",
+   "regex": "(?<![a-z0-9])business[ \\-]+divestitures(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 12
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "During the three months ended March 31, 2021, gain on business divestitures represents a $1.6 billion gain on the sale of our ATG Business to Aurora."
+   ]
+  },
+  {
+   "term": "divested",
+   "regex": "(?<![a-z0-9])divested(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 10
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "ATG and Other Technology Programs, which primarily consisted of our ATG business that was divested in the first quarter of 2021, and subsequent to the divestiture, is no longer a reportable segment and included within All Other."
+   ]
+  },
+  {
+   "term": "divestments",
+   "regex": "(?<![a-z0-9])divestments(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "•All Other: All Other Adjusted EBITDA of $(11) million improved YoY as a result of the divestments of ATG and Uber Elevate, which closed in January."
+   ]
+  },
+  {
+   "term": "closed",
+   "regex": "(?<![a-z0-9])closed(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 6,
+    "E2": 8
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "Both transactions were closed in January 2021."
+   ]
+  },
+  {
+   "term": "Held for sale",
+   "regex": "(?<![a-z0-9])held[ \\-]+for[ \\-]+sale(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 10,
+    "E2": 2
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1",
+    "E2"
+   ],
+   "subagent_quote": [
+    "The ATG assets and liabilities are presented as \"Held for sale\" on the consolidated balance sheet as of December 31, 2020.",
+    "The Company also derecognized $3.4 million in assets held for sale."
+   ]
+  },
+  {
+   "term": "merging",
+   "regex": "(?<![a-z0-9])merging(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 2
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "Further, in January 2021, we completed the ATG Transactions, which resulted in our ATG business merging with Aurora, an entity in which we are not represented on the management team and in which we do not have a controlling influence on the board."
+   ]
+  },
+  {
+   "term": "merger",
+   "regex": "(?<![a-z0-9])merger(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 15
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "In January 2021, we completed the ATG Transactions, which resulted in the merger of our ATG business with Aurora, and included a $400 million investment in the combined company and a commercial agreement pursuant to which we will collaborate with respect to the launch and commercialization of self-driving vehicles on our ridesharing network."
+   ]
+  },
+  {
+   "term": "settled",
+   "regex": "(?<![a-z0-9])settled(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 20
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "As a result, our controlling interest and the non-controlling interests in the ATG Business were settled and ownership of the ATG Business transferred to Aurora."
+   ]
+  },
+  {
+   "term": "transferred",
+   "regex": "(?<![a-z0-9])transferred(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 28,
+    "E2": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1",
+    "E2"
+   ],
+   "subagent_quote": [
+    "As a result, our controlling interest and the non-controlling interests in the ATG Business were settled and ownership of the ATG Business transferred to Aurora.",
+    "To provide investors with a representative savings datapoint for the third quarter and beyond, as long as the transaction closes in the third quarter, our non-GAAP results for Q3 will exclude any potential one-time gains or losses on the transaction, related transaction expenses and the expenses of the division being transferred for the full quarter."
+   ]
+  },
+  {
+   "term": "disposal",
+   "regex": "(?<![a-z0-9])disposal(?![a-z0-9])",
+   "exit_ids": [
+    "E1"
+   ],
+   "per_exit_counts": {
+    "E1": 4
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E1"
+   ],
+   "subagent_quote": [
+    "The resulting gain on disposal was recorded in other income (expense), net in the condensed consolidated statement of operations."
+   ]
+  },
+  {
+   "term": "join",
+   "regex": "(?<![a-z0-9])join(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "The Level 5 team will join Woven Planet, a subsidiary of Toyota dedicated to developing autonomous driving and other advanced mobility technologies."
+   ]
+  },
+  {
+   "term": "joining",
+   "regex": "(?<![a-z0-9])joining(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "Note: At closing, Lyft will be accelerating a portion of the unvested equity held by current employees of Level 5 that will be joining Woven Planet."
+   ]
+  },
+  {
+   "term": "pending sale",
+   "regex": "(?<![a-z0-9])pending[ \\-]+sale(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "“With the pending sale of our Level 5 self-driving division, Lyft is set up to win the transition to autonomous through our hybrid network of human drivers and AVs, advanced marketplace tech, and leading fleet management capabilities,” said John Zimmer, co-founder and president of Lyft."
+   ]
+  },
+  {
+   "term": "proposed sale",
+   "regex": "(?<![a-z0-9])proposed[ \\-]+sale(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "Forward-looking statements in this release include, but are not limited to, Lyft’s beliefs regarding its financial position and operating performance, including the effect of the COVID-19 pandemic and the timing of recovery, and the related impact on Lyft’s business, financial position and Lyft’s future profitability and timing for achievement of profitability, as well as Lyft’s proposed sale of its Level 5 self-driving division and strategic objectives."
+   ]
+  },
+  {
+   "term": "completed a transaction",
+   "regex": "(?<![a-z0-9])completed[ \\-]+a[ \\-]+transaction(?![a-z0-9])",
+   "exit_ids": [
+    "E2",
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E2": 16,
+    "E3": 4
+   },
+   "reference_rate": 0.008,
+   "reference_pooled": "1/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 1,
+     "denominator": 12,
+     "rate": 0.083333
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, we expect costs related to our prior initiative to develop self-driving systems to decrease in the second half of 2021."
+   ]
+  },
+  {
+   "term": "multi-element transaction",
+   "regex": "(?<![a-z0-9])multi[ \\-]+element[ \\-]+transaction(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 6
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "In July 2021, we completed a multi-element transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, as well as commercial agreements for the utilization of Lyft rideshare and fleet data to accelerate the safety and commercialization of the automated-driving vehicles that Woven Planet is developing."
+   ]
+  },
+  {
+   "term": "closed the sale",
+   "regex": "(?<![a-z0-9])closed[ \\-]+the[ \\-]+sale(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 3
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "For example, we recently closed the sale of our Level 5 self-driving vehicle division."
+   ]
+  },
+  {
+   "term": "prior initiative",
+   "regex": "(?<![a-z0-9])prior[ \\-]+initiative(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 6
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, certain costs related to our prior initiative to develop self-driving systems were eliminated beginning in the third quarter of 2021."
+   ]
+  },
+  {
+   "term": "eliminated",
+   "regex": "(?<![a-z0-9])eliminated(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 2
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, certain costs related to our prior initiative to develop self-driving systems were eliminated beginning in the third quarter of 2021."
+   ]
+  },
+  {
+   "term": "no longer develop",
+   "regex": "(?<![a-z0-9])no[ \\-]+longer[ \\-]+develop(?![a-z0-9])",
+   "exit_ids": [
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E2": 3
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "Following the sale of our Level 5 self-driving vehicle division, we no longer develop our own autonomous vehicle technology, so we must develop and maintain partnerships with other companies to offer autonomous vehicle technology on our platforms, and if we are unable to do so, or if we do so at a slower pace or at a higher cost or if our technology is less capable relative to our competitors, or if our efforts to optimize our strategy with regard to our autonomous vehicle technology development are not successful, our business, financial condition and results of operations could be adversely affected."
+   ]
+  },
+  {
+   "term": "derecognized",
+   "regex": "(?<![a-z0-9])derecognized(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2"
+   ],
+   "per_exit_counts": {
+    "E1": 8,
+    "E2": 2
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E2"
+   ],
+   "subagent_quote": [
+    "The Company also derecognized $3.4 million in assets held for sale."
+   ]
+  },
+  {
+   "term": "wound down",
+   "regex": "(?<![a-z0-9])wound[ \\-]+down(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 1
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "4 engineers from Argo AI as that company is wound down to expand and speed development of those opportunities. [fragment row]"
+   ]
+  },
+  {
+   "term": "wind down operations",
+   "regex": "(?<![a-z0-9])wind[ \\-]+down[ \\-]+operations(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 4
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "Finally, on October 26, 2022, we announced that Argo AI plans to wind down operations."
+   ]
+  },
+  {
+   "term": "exiting",
+   "regex": "(?<![a-z0-9])exiting(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 4
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "As a result, we reassessed the carrying value of our investment in Argo AI as of September 30, 2022, and in October, Ford and VW initiated the process of exiting the joint development of L4 technology through Argo AI."
+   ]
+  },
+  {
+   "term": "orderly conclusion",
+   "regex": "(?<![a-z0-9])orderly[ \\-]+conclusion(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 2
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "Our valuation assumes an orderly conclusion of operations at Argo AI, in which the cash required to satisfy the remaining obligations would consume most of Argo AI’s remaining capital."
+   ]
+  },
+  {
+   "term": "going concern",
+   "regex": "(?<![a-z0-9])going[ \\-]+concern(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 4
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "After performing external outreach in the third quarter to assess market interest in acquiring either Argo AI or its technology components and conducting internal reviews to evaluate opportunities to leverage Argo AI’s technology, Ford determined that Argo AI no longer has value as a going concern."
+   ]
+  },
+  {
+   "term": "impairment",
+   "regex": "(?<![a-z0-9])impairment(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E1": 3,
+    "E3": 17
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "Accordingly, Ford recorded a $2.7 billion non-cash, pretax impairment on its investment in Argo AI, resulting in an $827 million net loss for Q3."
+   ]
+  },
+  {
+   "term": "strategic decision",
+   "regex": "(?<![a-z0-9])strategic[ \\-]+decision(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 5
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "In the third quarter, Ford made a strategic decision to shift its capital spending from the L4 advanced driver assistance systems being developed by Argo AI to internally developed L2+/L3 technology."
+   ]
+  },
+  {
+   "term": "shift",
+   "regex": "(?<![a-z0-9])shift(?![a-z0-9])",
+   "exit_ids": [
+    "E1",
+    "E2",
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E1": 8,
+    "E2": 4,
+    "E3": 5
+   },
+   "reference_rate": 0.0,
+   "reference_pooled": "0/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 0,
+     "denominator": 12,
+     "rate": 0.0
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "In the third quarter, Ford made a strategic decision to shift its capital spending from the L4 advanced driver assistance systems being developed by Argo AI to internally developed L2+/L3 technology."
+   ]
+  },
+  {
+   "term": "deconsolidated",
+   "regex": "(?<![a-z0-9])deconsolidated(?![a-z0-9])",
+   "exit_ids": [
+    "E3"
+   ],
+   "per_exit_counts": {
+    "E3": 5
+   },
+   "reference_rate": 0.008,
+   "reference_pooled": "1/125",
+   "reference_per_source": {
+    "F": {
+     "numerator": 1,
+     "denominator": 12,
+     "rate": 0.083333
+    },
+    "LYFT": {
+     "numerator": 0,
+     "denominator": 46,
+     "rate": 0.0
+    },
+    "UBER": {
+     "numerator": 0,
+     "denominator": 67,
+     "rate": 0.0
+    }
+   },
+   "subagent_exit_id": [
+    "E3"
+   ],
+   "subagent_quote": [
+    "As a result of this transaction, which included $500 million of proceeds from the sale to VW of a portion of our interest in Argo AI, we deconsolidated Argo AI, remeasured our retained investment in the entity at fair value, and, net of our carrying value in Argo’s net assets, recognized a $3.5 billion pre-tax gain in Other income/(loss), net."
+   ]
+  }
+ ],
+ "secondary_lists": {
+  "secondary_threshold_0.02": [
+   {
+    "term": "acquire",
+    "regex": "(?<![a-z0-9])acquire(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 5,
+     "E2": 1
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 1,
+      "denominator": 46,
+      "rate": 0.021739
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "of merger transactions, Aurora will acquire ATG. [fragment row]",
+     "to acquire Lyft’s self-driving car division [fragment row]"
+    ]
+   },
+   {
+    "term": "merger transactions",
+    "regex": "(?<![a-z0-9])merger[ \\-]+transactions(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 5
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In December 2020, we and Apparate entered into a definitive agreement with Aurora and certain other parties, pursuant to which, through a series of merger transactions, we will sell Apparate to Aurora."
+    ]
+   },
+   {
+    "term": "sell",
+    "regex": "(?<![a-z0-9])sell(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 8
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In December 2020, we and Apparate entered into a definitive agreement with Aurora and certain other parties, pursuant to which, through a series of merger transactions, we will sell Apparate to Aurora."
+    ]
+   },
+   {
+    "term": "sale",
+    "regex": "(?<![a-z0-9])sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E1": 129,
+     "E2": 23,
+     "E3": 3
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "subagent_quote": [
+     "On December 7, 2020, we announced the sale of Apparate USA LLC (“ATG Business” or “Apparate”), our subsidiary focused on the development and commercialization of autonomous vehicle technologies, to Aurora Innovation, Inc. (“Aurora”).",
+     "On April 26, 2021, Lyft, Inc. (the “Company” or “Lyft”), announced that it had entered into a definitive agreement for the sale of its Level 5 self-driving vehicle division.",
+     "As a result of this transaction, which included $500 million of proceeds from the sale to VW of a portion of our interest in Argo AI, we deconsolidated Argo AI, remeasured our retained investment in the entity at fair value, and, net of our carrying value in Argo’s net assets, recognized a $3.5 billion pre-tax gain in Other income/(loss), net."
+    ]
+   },
+   {
+    "term": "completed the sale",
+    "regex": "(?<![a-z0-9])completed[ \\-]+the[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 30
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "On January 19, 2021, we completed the sale of our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "previously announced sale",
+    "regex": "(?<![a-z0-9])previously[ \\-]+announced[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 22
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "On January 19, 2021, we completed the previously announced sale of our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "sold",
+    "regex": "(?<![a-z0-9])sold(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 12
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In January 2021, we sold our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "sales",
+    "regex": "(?<![a-z0-9])sales(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 2,
+     "E2": 1
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 1,
+      "denominator": 46,
+      "rate": 0.021739
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "Non-GAAP research and development declined $15 million QoQ and $151 million YoY, driven by lower employee headcount costs, which was primarily driven by the sales of JUMP and our ATG business in the second quarter of 2020 and first quarter of 2021, respectively."
+    ]
+   },
+   {
+    "term": "divesting",
+    "regex": "(?<![a-z0-9])divesting(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "“We made some big moves this year, acquiring businesses like Cornershop and Postmates while divesting others like ATG and Jump, and structurally lowering our cost base,” said Nelson Chai, CFO."
+    ]
+   },
+   {
+    "term": "divestiture",
+    "regex": "(?<![a-z0-9])divestiture(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 64,
+     "E2": 39
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "We announced the divestiture of our Autonomous Technologies Group (“ATG”) to Aurora Innovation.",
+     "On April 26, 2021, the Company signed a definitive agreement with Woven Planet, a subsidiary of Toyota Motor Corporation, for divestiture of certain assets related to the Company’s self-driving vehicle division, Level 5, as well as non-exclusive commercial agreements for the utilization of Lyft system and fleet data to accelerate the safety and commercialization of the automated-driving vehicles that Woven Planet will develop."
+    ]
+   },
+   {
+    "term": "divestitures",
+    "regex": "(?<![a-z0-9])divestitures(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 35,
+     "E2": 7
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "•In 2021, divestitures consisted of the sale of our ATG Business, a subsidiary focused on the development and commercialization of autonomous vehicle technology, to Aurora.",
+     "Refer to Note 4 \"Divestitures\" to the consolidated financial statements for information regarding the divestiture of certain assets related to our self-driving vehicles division, Level 5."
+    ]
+   },
+   {
+    "term": "business divestitures",
+    "regex": "(?<![a-z0-9])business[ \\-]+divestitures(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 12
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "During the three months ended March 31, 2021, gain on business divestitures represents a $1.6 billion gain on the sale of our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "divested",
+    "regex": "(?<![a-z0-9])divested(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 10
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "ATG and Other Technology Programs, which primarily consisted of our ATG business that was divested in the first quarter of 2021, and subsequent to the divestiture, is no longer a reportable segment and included within All Other."
+    ]
+   },
+   {
+    "term": "divestments",
+    "regex": "(?<![a-z0-9])divestments(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "•All Other: All Other Adjusted EBITDA of $(11) million improved YoY as a result of the divestments of ATG and Uber Elevate, which closed in January."
+    ]
+   },
+   {
+    "term": "closed",
+    "regex": "(?<![a-z0-9])closed(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 6,
+     "E2": 8
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "Both transactions were closed in January 2021."
+    ]
+   },
+   {
+    "term": "Held for sale",
+    "regex": "(?<![a-z0-9])held[ \\-]+for[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 10,
+     "E2": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "The ATG assets and liabilities are presented as \"Held for sale\" on the consolidated balance sheet as of December 31, 2020.",
+     "The Company also derecognized $3.4 million in assets held for sale."
+    ]
+   },
+   {
+    "term": "merging",
+    "regex": "(?<![a-z0-9])merging(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "Further, in January 2021, we completed the ATG Transactions, which resulted in our ATG business merging with Aurora, an entity in which we are not represented on the management team and in which we do not have a controlling influence on the board."
+    ]
+   },
+   {
+    "term": "merger",
+    "regex": "(?<![a-z0-9])merger(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 15
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In January 2021, we completed the ATG Transactions, which resulted in the merger of our ATG business with Aurora, and included a $400 million investment in the combined company and a commercial agreement pursuant to which we will collaborate with respect to the launch and commercialization of self-driving vehicles on our ridesharing network."
+    ]
+   },
+   {
+    "term": "settled",
+    "regex": "(?<![a-z0-9])settled(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 20
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "As a result, our controlling interest and the non-controlling interests in the ATG Business were settled and ownership of the ATG Business transferred to Aurora."
+    ]
+   },
+   {
+    "term": "transferred",
+    "regex": "(?<![a-z0-9])transferred(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 28,
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "As a result, our controlling interest and the non-controlling interests in the ATG Business were settled and ownership of the ATG Business transferred to Aurora.",
+     "To provide investors with a representative savings datapoint for the third quarter and beyond, as long as the transaction closes in the third quarter, our non-GAAP results for Q3 will exclude any potential one-time gains or losses on the transaction, related transaction expenses and the expenses of the division being transferred for the full quarter."
+    ]
+   },
+   {
+    "term": "disposal",
+    "regex": "(?<![a-z0-9])disposal(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "The resulting gain on disposal was recorded in other income (expense), net in the condensed consolidated statement of operations."
+    ]
+   },
+   {
+    "term": "join",
+    "regex": "(?<![a-z0-9])join(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "The Level 5 team will join Woven Planet, a subsidiary of Toyota dedicated to developing autonomous driving and other advanced mobility technologies."
+    ]
+   },
+   {
+    "term": "joining",
+    "regex": "(?<![a-z0-9])joining(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "Note: At closing, Lyft will be accelerating a portion of the unvested equity held by current employees of Level 5 that will be joining Woven Planet."
+    ]
+   },
+   {
+    "term": "pending sale",
+    "regex": "(?<![a-z0-9])pending[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "“With the pending sale of our Level 5 self-driving division, Lyft is set up to win the transition to autonomous through our hybrid network of human drivers and AVs, advanced marketplace tech, and leading fleet management capabilities,” said John Zimmer, co-founder and president of Lyft."
+    ]
+   },
+   {
+    "term": "proposed sale",
+    "regex": "(?<![a-z0-9])proposed[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "Forward-looking statements in this release include, but are not limited to, Lyft’s beliefs regarding its financial position and operating performance, including the effect of the COVID-19 pandemic and the timing of recovery, and the related impact on Lyft’s business, financial position and Lyft’s future profitability and timing for achievement of profitability, as well as Lyft’s proposed sale of its Level 5 self-driving division and strategic objectives."
+    ]
+   },
+   {
+    "term": "completed a transaction",
+    "regex": "(?<![a-z0-9])completed[ \\-]+a[ \\-]+transaction(?![a-z0-9])",
+    "exit_ids": [
+     "E2",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E2": 16,
+     "E3": 4
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.083333
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, we expect costs related to our prior initiative to develop self-driving systems to decrease in the second half of 2021."
+    ]
+   },
+   {
+    "term": "multi-element transaction",
+    "regex": "(?<![a-z0-9])multi[ \\-]+element[ \\-]+transaction(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 6
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "In July 2021, we completed a multi-element transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, as well as commercial agreements for the utilization of Lyft rideshare and fleet data to accelerate the safety and commercialization of the automated-driving vehicles that Woven Planet is developing."
+    ]
+   },
+   {
+    "term": "closed the sale",
+    "regex": "(?<![a-z0-9])closed[ \\-]+the[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 3
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "For example, we recently closed the sale of our Level 5 self-driving vehicle division."
+    ]
+   },
+   {
+    "term": "prior initiative",
+    "regex": "(?<![a-z0-9])prior[ \\-]+initiative(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 6
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, certain costs related to our prior initiative to develop self-driving systems were eliminated beginning in the third quarter of 2021."
+    ]
+   },
+   {
+    "term": "eliminated",
+    "regex": "(?<![a-z0-9])eliminated(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, certain costs related to our prior initiative to develop self-driving systems were eliminated beginning in the third quarter of 2021."
+    ]
+   },
+   {
+    "term": "no longer develop",
+    "regex": "(?<![a-z0-9])no[ \\-]+longer[ \\-]+develop(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 3
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "Following the sale of our Level 5 self-driving vehicle division, we no longer develop our own autonomous vehicle technology, so we must develop and maintain partnerships with other companies to offer autonomous vehicle technology on our platforms, and if we are unable to do so, or if we do so at a slower pace or at a higher cost or if our technology is less capable relative to our competitors, or if our efforts to optimize our strategy with regard to our autonomous vehicle technology development are not successful, our business, financial condition and results of operations could be adversely affected."
+    ]
+   },
+   {
+    "term": "derecognized",
+    "regex": "(?<![a-z0-9])derecognized(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 8,
+     "E2": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "The Company also derecognized $3.4 million in assets held for sale."
+    ]
+   },
+   {
+    "term": "wound down",
+    "regex": "(?<![a-z0-9])wound[ \\-]+down(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "4 engineers from Argo AI as that company is wound down to expand and speed development of those opportunities. [fragment row]"
+    ]
+   },
+   {
+    "term": "wind down operations",
+    "regex": "(?<![a-z0-9])wind[ \\-]+down[ \\-]+operations(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "Finally, on October 26, 2022, we announced that Argo AI plans to wind down operations."
+    ]
+   },
+   {
+    "term": "exiting",
+    "regex": "(?<![a-z0-9])exiting(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "As a result, we reassessed the carrying value of our investment in Argo AI as of September 30, 2022, and in October, Ford and VW initiated the process of exiting the joint development of L4 technology through Argo AI."
+    ]
+   },
+   {
+    "term": "orderly conclusion",
+    "regex": "(?<![a-z0-9])orderly[ \\-]+conclusion(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "Our valuation assumes an orderly conclusion of operations at Argo AI, in which the cash required to satisfy the remaining obligations would consume most of Argo AI’s remaining capital."
+    ]
+   },
+   {
+    "term": "going concern",
+    "regex": "(?<![a-z0-9])going[ \\-]+concern(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "After performing external outreach in the third quarter to assess market interest in acquiring either Argo AI or its technology components and conducting internal reviews to evaluate opportunities to leverage Argo AI’s technology, Ford determined that Argo AI no longer has value as a going concern."
+    ]
+   },
+   {
+    "term": "impairment",
+    "regex": "(?<![a-z0-9])impairment(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E1": 3,
+     "E3": 17
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "Accordingly, Ford recorded a $2.7 billion non-cash, pretax impairment on its investment in Argo AI, resulting in an $827 million net loss for Q3."
+    ]
+   },
+   {
+    "term": "strategic decision",
+    "regex": "(?<![a-z0-9])strategic[ \\-]+decision(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 5
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "In the third quarter, Ford made a strategic decision to shift its capital spending from the L4 advanced driver assistance systems being developed by Argo AI to internally developed L2+/L3 technology."
+    ]
+   },
+   {
+    "term": "shift",
+    "regex": "(?<![a-z0-9])shift(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E1": 8,
+     "E2": 4,
+     "E3": 5
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "In the third quarter, Ford made a strategic decision to shift its capital spending from the L4 advanced driver assistance systems being developed by Argo AI to internally developed L2+/L3 technology."
+    ]
+   },
+   {
+    "term": "deconsolidated",
+    "regex": "(?<![a-z0-9])deconsolidated(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 5
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.083333
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "As a result of this transaction, which included $500 million of proceeds from the sale to VW of a portion of our interest in Argo AI, we deconsolidated Argo AI, remeasured our retained investment in the entity at fair value, and, net of our carrying value in Argo’s net assets, recognized a $3.5 billion pre-tax gain in Other income/(loss), net."
+    ]
+   }
+  ],
+  "secondary_threshold_0.10": [
+   {
+    "term": "acquire",
+    "regex": "(?<![a-z0-9])acquire(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 5,
+     "E2": 1
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 1,
+      "denominator": 46,
+      "rate": 0.021739
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "of merger transactions, Aurora will acquire ATG. [fragment row]",
+     "to acquire Lyft’s self-driving car division [fragment row]"
+    ]
+   },
+   {
+    "term": "merger transactions",
+    "regex": "(?<![a-z0-9])merger[ \\-]+transactions(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 5
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In December 2020, we and Apparate entered into a definitive agreement with Aurora and certain other parties, pursuant to which, through a series of merger transactions, we will sell Apparate to Aurora."
+    ]
+   },
+   {
+    "term": "sell",
+    "regex": "(?<![a-z0-9])sell(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 8
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In December 2020, we and Apparate entered into a definitive agreement with Aurora and certain other parties, pursuant to which, through a series of merger transactions, we will sell Apparate to Aurora."
+    ]
+   },
+   {
+    "term": "sale",
+    "regex": "(?<![a-z0-9])sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E1": 129,
+     "E2": 23,
+     "E3": 3
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "subagent_quote": [
+     "On December 7, 2020, we announced the sale of Apparate USA LLC (“ATG Business” or “Apparate”), our subsidiary focused on the development and commercialization of autonomous vehicle technologies, to Aurora Innovation, Inc. (“Aurora”).",
+     "On April 26, 2021, Lyft, Inc. (the “Company” or “Lyft”), announced that it had entered into a definitive agreement for the sale of its Level 5 self-driving vehicle division.",
+     "As a result of this transaction, which included $500 million of proceeds from the sale to VW of a portion of our interest in Argo AI, we deconsolidated Argo AI, remeasured our retained investment in the entity at fair value, and, net of our carrying value in Argo’s net assets, recognized a $3.5 billion pre-tax gain in Other income/(loss), net."
+    ]
+   },
+   {
+    "term": "completed the sale",
+    "regex": "(?<![a-z0-9])completed[ \\-]+the[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 30
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "On January 19, 2021, we completed the sale of our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "previously announced sale",
+    "regex": "(?<![a-z0-9])previously[ \\-]+announced[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 22
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "On January 19, 2021, we completed the previously announced sale of our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "sold",
+    "regex": "(?<![a-z0-9])sold(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 12
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In January 2021, we sold our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "sales",
+    "regex": "(?<![a-z0-9])sales(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 2,
+     "E2": 1
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 1,
+      "denominator": 46,
+      "rate": 0.021739
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "Non-GAAP research and development declined $15 million QoQ and $151 million YoY, driven by lower employee headcount costs, which was primarily driven by the sales of JUMP and our ATG business in the second quarter of 2020 and first quarter of 2021, respectively."
+    ]
+   },
+   {
+    "term": "divesting",
+    "regex": "(?<![a-z0-9])divesting(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "“We made some big moves this year, acquiring businesses like Cornershop and Postmates while divesting others like ATG and Jump, and structurally lowering our cost base,” said Nelson Chai, CFO."
+    ]
+   },
+   {
+    "term": "divestiture",
+    "regex": "(?<![a-z0-9])divestiture(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 64,
+     "E2": 39
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "We announced the divestiture of our Autonomous Technologies Group (“ATG”) to Aurora Innovation.",
+     "On April 26, 2021, the Company signed a definitive agreement with Woven Planet, a subsidiary of Toyota Motor Corporation, for divestiture of certain assets related to the Company’s self-driving vehicle division, Level 5, as well as non-exclusive commercial agreements for the utilization of Lyft system and fleet data to accelerate the safety and commercialization of the automated-driving vehicles that Woven Planet will develop."
+    ]
+   },
+   {
+    "term": "divestitures",
+    "regex": "(?<![a-z0-9])divestitures(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 35,
+     "E2": 7
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "•In 2021, divestitures consisted of the sale of our ATG Business, a subsidiary focused on the development and commercialization of autonomous vehicle technology, to Aurora.",
+     "Refer to Note 4 \"Divestitures\" to the consolidated financial statements for information regarding the divestiture of certain assets related to our self-driving vehicles division, Level 5."
+    ]
+   },
+   {
+    "term": "business divestitures",
+    "regex": "(?<![a-z0-9])business[ \\-]+divestitures(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 12
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "During the three months ended March 31, 2021, gain on business divestitures represents a $1.6 billion gain on the sale of our ATG Business to Aurora."
+    ]
+   },
+   {
+    "term": "divested",
+    "regex": "(?<![a-z0-9])divested(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 10
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "ATG and Other Technology Programs, which primarily consisted of our ATG business that was divested in the first quarter of 2021, and subsequent to the divestiture, is no longer a reportable segment and included within All Other."
+    ]
+   },
+   {
+    "term": "divestments",
+    "regex": "(?<![a-z0-9])divestments(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "•All Other: All Other Adjusted EBITDA of $(11) million improved YoY as a result of the divestments of ATG and Uber Elevate, which closed in January."
+    ]
+   },
+   {
+    "term": "closed",
+    "regex": "(?<![a-z0-9])closed(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 6,
+     "E2": 8
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "Both transactions were closed in January 2021."
+    ]
+   },
+   {
+    "term": "Held for sale",
+    "regex": "(?<![a-z0-9])held[ \\-]+for[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 10,
+     "E2": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "The ATG assets and liabilities are presented as \"Held for sale\" on the consolidated balance sheet as of December 31, 2020.",
+     "The Company also derecognized $3.4 million in assets held for sale."
+    ]
+   },
+   {
+    "term": "merging",
+    "regex": "(?<![a-z0-9])merging(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "Further, in January 2021, we completed the ATG Transactions, which resulted in our ATG business merging with Aurora, an entity in which we are not represented on the management team and in which we do not have a controlling influence on the board."
+    ]
+   },
+   {
+    "term": "merger",
+    "regex": "(?<![a-z0-9])merger(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 15
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "In January 2021, we completed the ATG Transactions, which resulted in the merger of our ATG business with Aurora, and included a $400 million investment in the combined company and a commercial agreement pursuant to which we will collaborate with respect to the launch and commercialization of self-driving vehicles on our ridesharing network."
+    ]
+   },
+   {
+    "term": "settled",
+    "regex": "(?<![a-z0-9])settled(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 20
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "As a result, our controlling interest and the non-controlling interests in the ATG Business were settled and ownership of the ATG Business transferred to Aurora."
+    ]
+   },
+   {
+    "term": "transferred",
+    "regex": "(?<![a-z0-9])transferred(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 28,
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1",
+     "E2"
+    ],
+    "subagent_quote": [
+     "As a result, our controlling interest and the non-controlling interests in the ATG Business were settled and ownership of the ATG Business transferred to Aurora.",
+     "To provide investors with a representative savings datapoint for the third quarter and beyond, as long as the transaction closes in the third quarter, our non-GAAP results for Q3 will exclude any potential one-time gains or losses on the transaction, related transaction expenses and the expenses of the division being transferred for the full quarter."
+    ]
+   },
+   {
+    "term": "disposal",
+    "regex": "(?<![a-z0-9])disposal(?![a-z0-9])",
+    "exit_ids": [
+     "E1"
+    ],
+    "per_exit_counts": {
+     "E1": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E1"
+    ],
+    "subagent_quote": [
+     "The resulting gain on disposal was recorded in other income (expense), net in the condensed consolidated statement of operations."
+    ]
+   },
+   {
+    "term": "acquisition",
+    "regex": "(?<![a-z0-9])acquisition(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 6,
+     "E2": 3
+    },
+    "reference_rate": 0.056,
+    "reference_pooled": "7/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 6,
+      "denominator": 46,
+      "rate": 0.130435
+     },
+     "UBER": {
+      "numerator": 1,
+      "denominator": 67,
+      "rate": 0.014925
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "SAN FRANCISCO and TOKYO, Japan – Lyft, Inc. (LYFT) announced today that the company has signed an agreement with Woven Planet Holdings, Inc., (“Woven Planet”), a subsidiary of Toyota Motor Corporation, for the acquisition of Lyft’s self-driving vehicle division, Level 5."
+    ]
+   },
+   {
+    "term": "join",
+    "regex": "(?<![a-z0-9])join(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "The Level 5 team will join Woven Planet, a subsidiary of Toyota dedicated to developing autonomous driving and other advanced mobility technologies."
+    ]
+   },
+   {
+    "term": "joining",
+    "regex": "(?<![a-z0-9])joining(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "Note: At closing, Lyft will be accelerating a portion of the unvested equity held by current employees of Level 5 that will be joining Woven Planet."
+    ]
+   },
+   {
+    "term": "pending sale",
+    "regex": "(?<![a-z0-9])pending[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "“With the pending sale of our Level 5 self-driving division, Lyft is set up to win the transition to autonomous through our hybrid network of human drivers and AVs, advanced marketplace tech, and leading fleet management capabilities,” said John Zimmer, co-founder and president of Lyft."
+    ]
+   },
+   {
+    "term": "proposed sale",
+    "regex": "(?<![a-z0-9])proposed[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "Forward-looking statements in this release include, but are not limited to, Lyft’s beliefs regarding its financial position and operating performance, including the effect of the COVID-19 pandemic and the timing of recovery, and the related impact on Lyft’s business, financial position and Lyft’s future profitability and timing for achievement of profitability, as well as Lyft’s proposed sale of its Level 5 self-driving division and strategic objectives."
+    ]
+   },
+   {
+    "term": "completed a transaction",
+    "regex": "(?<![a-z0-9])completed[ \\-]+a[ \\-]+transaction(?![a-z0-9])",
+    "exit_ids": [
+     "E2",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E2": 16,
+     "E3": 4
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.083333
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, we expect costs related to our prior initiative to develop self-driving systems to decrease in the second half of 2021."
+    ]
+   },
+   {
+    "term": "multi-element transaction",
+    "regex": "(?<![a-z0-9])multi[ \\-]+element[ \\-]+transaction(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 6
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "In July 2021, we completed a multi-element transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, as well as commercial agreements for the utilization of Lyft rideshare and fleet data to accelerate the safety and commercialization of the automated-driving vehicles that Woven Planet is developing."
+    ]
+   },
+   {
+    "term": "closed the sale",
+    "regex": "(?<![a-z0-9])closed[ \\-]+the[ \\-]+sale(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 3
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "For example, we recently closed the sale of our Level 5 self-driving vehicle division."
+    ]
+   },
+   {
+    "term": "prior initiative",
+    "regex": "(?<![a-z0-9])prior[ \\-]+initiative(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 6
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, certain costs related to our prior initiative to develop self-driving systems were eliminated beginning in the third quarter of 2021."
+    ]
+   },
+   {
+    "term": "eliminated",
+    "regex": "(?<![a-z0-9])eliminated(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "On July 13, 2021, we completed a transaction with Woven Planet, a subsidiary of Toyota Motor Corporation, for the divestiture of certain assets related to our self-driving vehicle division, Level 5, and as a result, certain costs related to our prior initiative to develop self-driving systems were eliminated beginning in the third quarter of 2021."
+    ]
+   },
+   {
+    "term": "no longer develop",
+    "regex": "(?<![a-z0-9])no[ \\-]+longer[ \\-]+develop(?![a-z0-9])",
+    "exit_ids": [
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E2": 3
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "Following the sale of our Level 5 self-driving vehicle division, we no longer develop our own autonomous vehicle technology, so we must develop and maintain partnerships with other companies to offer autonomous vehicle technology on our platforms, and if we are unable to do so, or if we do so at a slower pace or at a higher cost or if our technology is less capable relative to our competitors, or if our efforts to optimize our strategy with regard to our autonomous vehicle technology development are not successful, our business, financial condition and results of operations could be adversely affected."
+    ]
+   },
+   {
+    "term": "derecognized",
+    "regex": "(?<![a-z0-9])derecognized(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2"
+    ],
+    "per_exit_counts": {
+     "E1": 8,
+     "E2": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E2"
+    ],
+    "subagent_quote": [
+     "The Company also derecognized $3.4 million in assets held for sale."
+    ]
+   },
+   {
+    "term": "wound down",
+    "regex": "(?<![a-z0-9])wound[ \\-]+down(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 1
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "4 engineers from Argo AI as that company is wound down to expand and speed development of those opportunities. [fragment row]"
+    ]
+   },
+   {
+    "term": "wind down operations",
+    "regex": "(?<![a-z0-9])wind[ \\-]+down[ \\-]+operations(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "Finally, on October 26, 2022, we announced that Argo AI plans to wind down operations."
+    ]
+   },
+   {
+    "term": "exiting",
+    "regex": "(?<![a-z0-9])exiting(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "As a result, we reassessed the carrying value of our investment in Argo AI as of September 30, 2022, and in October, Ford and VW initiated the process of exiting the joint development of L4 technology through Argo AI."
+    ]
+   },
+   {
+    "term": "orderly conclusion",
+    "regex": "(?<![a-z0-9])orderly[ \\-]+conclusion(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 2
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "Our valuation assumes an orderly conclusion of operations at Argo AI, in which the cash required to satisfy the remaining obligations would consume most of Argo AI’s remaining capital."
+    ]
+   },
+   {
+    "term": "going concern",
+    "regex": "(?<![a-z0-9])going[ \\-]+concern(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 4
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "After performing external outreach in the third quarter to assess market interest in acquiring either Argo AI or its technology components and conducting internal reviews to evaluate opportunities to leverage Argo AI’s technology, Ford determined that Argo AI no longer has value as a going concern."
+    ]
+   },
+   {
+    "term": "impairment",
+    "regex": "(?<![a-z0-9])impairment(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E1": 3,
+     "E3": 17
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "Accordingly, Ford recorded a $2.7 billion non-cash, pretax impairment on its investment in Argo AI, resulting in an $827 million net loss for Q3."
+    ]
+   },
+   {
+    "term": "strategic decision",
+    "regex": "(?<![a-z0-9])strategic[ \\-]+decision(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 5
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "In the third quarter, Ford made a strategic decision to shift its capital spending from the L4 advanced driver assistance systems being developed by Argo AI to internally developed L2+/L3 technology."
+    ]
+   },
+   {
+    "term": "shift",
+    "regex": "(?<![a-z0-9])shift(?![a-z0-9])",
+    "exit_ids": [
+     "E1",
+     "E2",
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E1": 8,
+     "E2": 4,
+     "E3": 5
+    },
+    "reference_rate": 0.0,
+    "reference_pooled": "0/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 0,
+      "denominator": 12,
+      "rate": 0.0
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "In the third quarter, Ford made a strategic decision to shift its capital spending from the L4 advanced driver assistance systems being developed by Argo AI to internally developed L2+/L3 technology."
+    ]
+   },
+   {
+    "term": "deconsolidated",
+    "regex": "(?<![a-z0-9])deconsolidated(?![a-z0-9])",
+    "exit_ids": [
+     "E3"
+    ],
+    "per_exit_counts": {
+     "E3": 5
+    },
+    "reference_rate": 0.008,
+    "reference_pooled": "1/125",
+    "reference_per_source": {
+     "F": {
+      "numerator": 1,
+      "denominator": 12,
+      "rate": 0.083333
+     },
+     "LYFT": {
+      "numerator": 0,
+      "denominator": 46,
+      "rate": 0.0
+     },
+     "UBER": {
+      "numerator": 0,
+      "denominator": 67,
+      "rate": 0.0
+     }
+    },
+    "subagent_exit_id": [
+     "E3"
+    ],
+    "subagent_quote": [
+     "As a result of this transaction, which included $500 million of proceeds from the sale to VW of a portion of our interest in Argo AI, we deconsolidated Argo AI, remeasured our retained investment in the entity at fair value, and, net of our carrying value in Argo’s net assets, recognized a $3.5 billion pre-tax gain in Other income/(loss), net."
+    ]
+   }
+  ]
+ },
+ "context_contamination": "Yes. No CLAUDE.md was loaded. Before Phase A began, this session's context held: (1) the auto-loaded memory index MEMORY.md, whose lines name the edgar-autonomy project but contain no GM, Cruise or wind-down vocabulary; (2) the memory file edgar-autonomy-project.md, which I opened to check M1 status after an old kickoff message was redelivered. Does it contain GM tone or wind-down findings: YES (earlier-milestone GM/Cruise metric counts and a GM robotaxi tone/wind-down finding). Does it contain any wind-down word list: NO. (3) The project kickoff message, which names GM/Cruise as a tracked company. During Phase A, a directory listing of data/m4 showed a file name indicating an earlier GM wind-down test, and dir() on scripts/tone.py showed a variable name referring to wind-down; neither the file nor the variable's contents were opened or printed. The coordinator's brief referred to 'non-GM exits' and contained no GM results or term list.",
+ "subagent": {
+  "tool": "Agent (subagent_type general-purpose, fresh context, no model override)",
+  "model_id": "claude-opus-5-5[1m] (inherited from this session's configured model; the Agent tool does not report a serving model id)",
+  "tool_calls": 12,
+  "tool_calls_detail": "Read and Grep on blind/exit_passages.csv only (per the subagent's own note)",
+  "runs": 1,
+  "reruns": 0,
+  "prompt_mode": "path (inline prompt would have been 215,761 characters > 150,000)"
+ },
+ "phase_a_log": {
+  "efts_crosscheck": {
+   "hits": 31,
+   "all_in_candidates": true,
+   "all_included": true
+  },
+  "non_html_exhibits_skipped": 0,
+  "anchor_hits_in_tables_total": 40,
+  "anchor_hits_in_tables": {
+   "e20603_uber-8k.htm": 0,
+   "e21016_uber-8k.htm": 0,
+   "uberq420earningspressrelea.htm": 2,
+   "uber-20201231.htm": 10,
+   "uberq121earningspressrelea.htm": 0,
+   "uber-20210331.htm": 4,
+   "uberq221earningspressrelea.htm": 0,
+   "uber-20210630.htm": 4,
+   "uberq321earningspressrelea.htm": 0,
+   "uber-20210930.htm": 4,
+   "uberq421earningspressrelea.htm": 0,
+   "uber-20211231.htm": 6,
+   "lyft-20210426.htm": 3,
+   "pressrelease42621.htm": 0,
+   "lyftautonomousslides.htm": 0,
+   "lyft-2021331xpressreleaseq.htm": 0,
+   "lyft-20210331.htm": 0,
+   "lyft-20210630xpressrelease.htm": 0,
+   "lyft-20210630.htm": 0,
+   "lyft-20210930xpressrelease.htm": 0,
+   "lyft-20210930.htm": 1,
+   "lyft-2021x12x31pressreleas.htm": 0,
+   "lyft-20211231.htm": 2,
+   "exhibit99tooctober262022.htm": 0,
+   "f-20220930.htm": 1,
+   "exhibit99tofordfebruary2.htm": 0,
+   "f-20221231.htm": 3,
+   "f-20211231.htm": 3
+  },
+  "defined_term_anchors": [
+   {
+    "exit_id": "E1",
+    "doc": "e20603_uber-8k.htm",
+    "term": "Company"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20201231.htm",
+    "term": "ATG Business"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20201231.htm",
+    "term": "Apparate"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20201231.htm",
+    "term": "ATG Transactions"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20201231.htm",
+    "term": "ATG Collaboration Agreement"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210331.htm",
+    "term": "Apparate"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210331.htm",
+    "term": "ATG Business"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210331.htm",
+    "term": "Aurora Investments"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210331.htm",
+    "term": "Softbank's"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210331.htm",
+    "term": "ATG Transactions"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210630.htm",
+    "term": "Apparate"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210630.htm",
+    "term": "ATG Business"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210630.htm",
+    "term": "Aurora Investments"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210630.htm",
+    "term": "Softbank's"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210630.htm",
+    "term": "ATG Transactions"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210930.htm",
+    "term": "Apparate"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210930.htm",
+    "term": "ATG Business"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210930.htm",
+    "term": "Aurora Investments"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210930.htm",
+    "term": "Softbank's"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20210930.htm",
+    "term": "ATG Transactions"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20211231.htm",
+    "term": "Apparate"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20211231.htm",
+    "term": "ATG Business"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20211231.htm",
+    "term": "Aurora Investments"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20211231.htm",
+    "term": "SPAC"
+   },
+   {
+    "exit_id": "E1",
+    "doc": "uber-20211231.htm",
+    "term": "ATG Collaboration Agreement"
+   },
+   {
+    "exit_id": "E2",
+    "doc": "lyft-20210426.htm",
+    "term": "Company"
+   },
+   {
+    "exit_id": "E2",
+    "doc": "lyft-20210426.htm",
+    "term": "Lyft"
+   },
+   {
+    "exit_id": "E3",
+    "doc": "f-20220930.htm",
+    "term": "VW"
+   },
+   {
+    "exit_id": "E3",
+    "doc": "f-20221231.htm",
+    "term": "VW"
+   },
+   {
+    "exit_id": "E3",
+    "doc": "f-20221231.htm",
+    "term": "Argo AI"
+   },
+   {
+    "exit_id": "REF",
+    "doc": "f-20211231.htm",
+    "term": "Argo AI"
+   },
+   {
+    "exit_id": "REF",
+    "doc": "f-20211231.htm",
+    "term": "VW"
+   }
+  ],
+  "section_failures": [],
+  "decisions": [
+   "A1: EDGAR index pages link inline-XBRL primary documents as /ix?doc=...; the first fetch saved the viewer stub (6 KB) instead of the filing. Fixed by stripping the /ix?doc= prefix and re-fetching all documents before any A2 output existed.",
+   "A1: all documents fetched fresh from EDGAR (no copying from the project corpus). 10-Q/10-K: primary document only. 8-K: main document plus every EX-99.x exhibit.",
+   "A2: defined terms were taken in a single pass from sentences hit by the listed anchors. A first run iterated to a fixed point (defined terms defining further terms); it was replaced before A4/A5 because 'an anchored sentence' most literally means one hit by the listed anchors. Flagged for review.",
+   "A2: the cleaner's block unit is a line of the cleaned text (tone.sentences splits per line); para_id is the line index. A heading is a non-empty line of 12 or fewer whitespace tokens whose last character is not . ! or ?; its passage is the next non-empty line. A passage merging windows from several anchors joins its anchor types with '|'.",
+   "A2: table membership = the anchor line's normalized text equals a line of extract_text() applied to an HTML <table> in the same document.",
+   "A2: the cleaner's MIN_CHARS skip (an indexing rule in clean_doc) was not applied; no exit document was short.",
+   "A5: the subagent noted the instruction conflict ('Do not use any tools' vs 'Read only that one file') and used Read/Grep on the blind file only.",
+   "A5: one passage exceeds 1,900 characters; the subagent's Read tool may truncate very long lines. The subagent reported reading every row.",
+   "A6: F1 runs before case-insensitive dedup; duplicates keep the first spelling and accumulate subagent exit_ids/quotes. F2 sentence-initial = first token of a tone.sentences sentence within a normalized passage; tokens split on hyphens as in term_regex. per_exit_counts = number of exit passages matched.",
+   "A6 was run three times on identical locked inputs (code-only re-runs after aligning the F2 tokenizer); results identical. A5 ran once."
+  ]
+ },
+ "sha256_of_committed_files": {
+  ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+  "a1_candidates.csv": "e8f9f37a17dbe00b0162d0b3e0f6c28b3c58ddbdad386efc2ecf147c1e2112de",
+  "a1_manifest.csv": "81257a6e06e9b33d286c86ccf18e278f6a2d54df67482f3d2886a01dcd54c84b",
+  "a4_prompt.txt": "2069e92fa8877573c6385317eebc9c6796cce2d5b47fd10254b0538591ae1a67",
+  "a4_response.txt": "59abd88b00fb18975c9db0a75d73cdbf2398b8bf706567f498a41fc8be384034",
+  "blind/exit_passages.csv": "8f3b637ce7a9cfa80cfb2e3cb89a75e11f9bbb6be663025d28c01721a2986edc",
+  "exit_passages.csv": "8f3b637ce7a9cfa80cfb2e3cb89a75e11f9bbb6be663025d28c01721a2986edc",
+  "filter_log.csv": "6090b858c911bd0cf83248bd3dec5b4cb38c27bda7796872a82f8edb4dfd3593",
+  "phase_a_files_read.txt": "e2d47c00e5487b451bef3c0393f83a429076638804b54ff2df4b82450c77f293",
+  "protocol_received.md": "fabc7fe4de0f8ecda41a0bb144719c238011d0e7c2f077d6876eaee215897c20",
+  "reference_passages.csv": "ab34fcecbf1234d862b28d424bbb3eaec862b7bf1153dbb56f6283488c1f56d4",
+  "scripts/a1_efts.py": "65fe980a8ff21388aea879fbb2b7e646ada628c8dad49b5c05c8373b4e07408b",
+  "scripts/a1_enumerate.py": "7cc8aa35b0a554e209c9453e0d324cbc9903405c8fbfc23be310b92979193c66",
+  "scripts/a1_fetch.py": "42b74ba8d62337195f6b4f92849f376918871a7be642c08e0b9db1bacd344884",
+  "scripts/a2_passages.py": "f24a10506f8b145bdf271530ee76c52fb3b0d4c867f52c93267a8a50a1ce23ff",
+  "scripts/a3_reference.py": "3afa569801bbd78d16d8f66874245206af87e5ca6ad766c4d93be447ea66599c",
+  "scripts/a4_manifest.py": "77d21a41f7d67a5c304d18e2d1df809c7de8b05caa89ef936551937ff1b4d2dd",
+  "scripts/a5_prepare.py": "1b9dd8717d609de1e60b94c3cb6124c415e5c1309c223671ef4a297007ca9a83",
+  "scripts/a6_filters.py": "016cf4988ad700b3e4556fe1c8ad2f82a34d3787399ded1e67c56223340eb0ca",
+  "scripts/a7_freeze.py": "ad5ced7c3e657d08012d715509a4e2924e91cd37fa99a8d0e5411ecea277d041",
+  "scripts/clean_seg.py": "b097df38c07d8e4033ac9f698e305e0195b2a219de289fd8775eb6867c5c0aec",
+  "scripts/common.py": "c79d64d221c35f8577a8b89c0016bacebf2e443d687e353c4451788048bca114",
+  "scripts/edgar_fetch.py": "c6a4d285ef75fd051894a53da82f1aee7f461128ae1c85201ffaac7d9023cef9",
+  "scripts/flog.py": "0a42702d72e46944ad691e2b9a796e87e72f6a9c7134fe126995be77e44330a6",
+  "scripts/wdc.py": "06701c7a03a531fe4a89e681bc7e6d73a5136eca7274276c79e152da5a48a4ad"
+ },
+ "note": "Frozen before this list was applied to any GM text. This session's instructions contained no GM results and no earlier wind-down list. The term-selection subagent received only the A5 instruction and the exit-passage text. No GM row, GM filing, project note or earlier wind-down output was opened during Phase A (see phase_a_files_read.txt). The session and the subagent are language models whose training may include public reporting on GM and Cruise; the attestation filter limits terms to wording used in the three non-GM exit filings. All later intervals are conditional on this single extraction."
+}

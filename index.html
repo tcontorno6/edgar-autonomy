@@ -87,6 +87,8 @@ tbody tr:last-child td{border-bottom:none}
 td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:600;text-align:right;white-space:nowrap}
 .co{font-weight:600}
 .zero{color:var(--neg);font-weight:600}
+td.num .ci{display:block;color:var(--faint);font-weight:400;font-size:11px}
+tr.tot td{border-top:2px solid var(--line);font-weight:600}
 
 /* methods */
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -185,21 +187,43 @@ footer a{color:var(--accent)}
 
   <section id="gm">
     <div class="fnum">FINDING 05</div>
-    <h2>GM's robotaxi language is the sound of a wind-down — and it turns in late 2023.</h2>
-    <p class="sub">GM's heavy attention in Finding 01 is not enthusiasm. In the robotaxi passages outside boilerplate, tone falls off a cliff at 2023Q4 — a year before GM publicly pulled funding from Cruise's robotaxi work in December 2024.</p>
+    <h2>GM's robotaxi language turns sharply negative from late 2023. A word test fixed in advance does not confirm it as wind-down talk.</h2>
+    <p class="sub">GM's heavy attention in Finding 01 is not enthusiasm. In the robotaxi passages outside boilerplate, tone drops below the surrounding text at 2023Q4, after a smaller step down in 2022, a year before GM publicly pulled funding from Cruise's robotaxi work in December 2024.</p>
     <div class="chart">
       <h4>Cruise / robotaxi tone vs. baseline, by quarter</h4>
       <p class="cap">Above zero = more positive than the surrounding text; below = more negative. The negativity is financial — restructuring, losses, impairment — not regulatory.</p>
       <div class="csvg" id="c-gmtone"></div>
     </div>
+    <div class="callout">
+      <b>Before vs. from 2023Q4</b> (split by filing date; word-level rates; 95% intervals resample whole filings): Loughran-McDonald negative words per 1,000 go from <span class="mono">7.2</span> (5.8–8.8) to <span class="mono">19.6</span> (16.4–22.1), a rise of <span class="mono">+12.3</span> (8.9–15.2). Net tone goes from <span class="mono">+1.8</span> to <span class="mono">−16.5</span>. Of every quarterly cut from 2020 to 2025, 2023Q4, the quarter of the October 2023 pedestrian accident and pause, gives the largest gap (p = 0.0006, corrected for the cut having been picked from this series). But the gap grows steadily through 2022–23, and with repeated boilerplate removed the largest gap moves to 2022Q2. This tests a change in level; it cannot tell a sharp break from a gradual slide.
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Filed</th><th>Filings</th><th>Passages</th><th>Negative /1k</th><th>Net tone /1k</th><th>Wind-down share: list v3 (fixed in advance)</th><th>Wind-down share: original list (post-hoc)</th></tr></thead>
+        <tbody>
+          <tr><td>2019</td><td class="num">10</td><td class="num">81</td><td class="num">5.4 <span class="ci">2.0–7.6</span></td><td class="num">+4.5 <span class="ci">1.2–11.4</span></td><td class="num">14% <span class="ci">6–36</span></td><td class="num">0% <span class="ci">0–28†</span></td></tr>
+          <tr><td>2020</td><td class="num">8</td><td class="num">56</td><td class="num">8.2 <span class="ci">6.3–11.2</span></td><td class="num">+6.3 <span class="ci">0.9–11.8</span></td><td class="num">14% <span class="ci">11–25</span></td><td class="num">0% <span class="ci">0–32†</span></td></tr>
+          <tr><td>2021 ⚑</td><td class="num">4</td><td class="num">63</td><td class="num">4.2 <span class="ci">1.5–5.6</span></td><td class="num">+4.8 <span class="ci">2.0–8.6</span></td><td class="num">10% <span class="ci">6–14</span></td><td class="num">0% <span class="ci">0–49†</span></td></tr>
+          <tr><td>2022</td><td class="num">5</td><td class="num">70</td><td class="num">10.4 <span class="ci">6.6–13.6</span></td><td class="num">−4.1 <span class="ci">−7.6 to 0.0</span></td><td class="num">6% <span class="ci">5–6</span></td><td class="num">0% <span class="ci">0–43†</span></td></tr>
+          <tr><td>2023 Jan–Sep</td><td class="num">6</td><td class="num">49</td><td class="num">7.8 <span class="ci">6.4–9.6</span></td><td class="num">−1.1 <span class="ci">−4.6 to 0.0</span></td><td class="num">10% <span class="ci">6–11</span></td><td class="num">0% <span class="ci">0–39†</span></td></tr>
+          <tr><td>2023 Oct–Dec ⚑</td><td class="num">3</td><td class="num">14</td><td class="num">18.7 <span class="ci">0.0–20.8</span></td><td class="num">−16.4 <span class="ci">−18.2 to 0.0</span></td><td class="num">21% <span class="ci">0–100</span></td><td class="num">7% <span class="ci">0–8</span></td></tr>
+          <tr><td>2024</td><td class="num">10</td><td class="num">101</td><td class="num">21.8 <span class="ci">17.2–24.7</span></td><td class="num">−18.4 <span class="ci">−21.9 to −11.5</span></td><td class="num">11% <span class="ci">9–13</span></td><td class="num">30% <span class="ci">23–35</span></td></tr>
+          <tr><td>2025</td><td class="num">7</td><td class="num">88</td><td class="num">17.4 <span class="ci">11.8–22.7</span></td><td class="num">−14.5 <span class="ci">−19.4 to −8.2</span></td><td class="num">15% <span class="ci">12–18</span></td><td class="num">59% <span class="ci">40–78</span></td></tr>
+          <tr><td>2026 Jan–Sep</td><td class="num">5</td><td class="num">43</td><td class="num">19.4 <span class="ci">17.3–26.3</span></td><td class="num">−16.9 <span class="ci">−26.3 to −14.9</span></td><td class="num">19% <span class="ci">14–21</span></td><td class="num">79% <span class="ci">70–93</span></td></tr>
+          <tr class="tot"><td>Before 2023Q4</td><td class="num">33</td><td class="num">319</td><td class="num">7.2 <span class="ci">5.8–8.8</span></td><td class="num">+1.8 <span class="ci">−0.5 to 4.4</span></td><td class="num">11% <span class="ci">8–14</span></td><td class="num">0% <span class="ci">0–10†</span></td></tr>
+          <tr class="tot"><td>From 2023Q4</td><td class="num">25</td><td class="num">246</td><td class="num">19.6 <span class="ci">16.4–22.1</span></td><td class="num">−16.5 <span class="ci">−19.3 to −13.0</span></td><td class="num">14% <span class="ci">12–17</span></td><td class="num">48% <span class="ci">36–61</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap" style="font-size:12px;color:var(--muted);margin:-6px 0 18px">95% intervals in grey resample filings within each row (10,000 draws). † 0% in every draw; interval is Wilson at n = filings. ⚑ fewer than 5 filings, interval unreliable. 2026 runs to Sep 30. Word-level rate = negative words summed over passages ÷ scored words summed × 1,000. The two wind-down columns differ in both word list and matching rule.</p>
     <div class="chart">
-      <h4>What the language is doing: wind-down vs. expansion vocabulary</h4>
-      <p class="cap">Share of GM robotaxi passages using wind-down words (pause, restructure, no longer fund…) vs. expansion words (launch, scale, new markets…).</p>
+      <h4>Wind-down vocabulary: a list fixed in advance vs. the original post-hoc list</h4>
+      <p class="cap">Share of GM robotaxi passages by quarter. The original wind-down list (pause, restructure, no longer fund…) was written after reading GM's filings and never frozen, so its rise is description, not evidence. List v3 was derived only from Uber's, Lyft's and Ford's exit filings and frozen before GM was scored. Expansion words (launch, scale, new markets…) come from the original, post-hoc analysis.</p>
       <div class="csvg" id="c-gmvocab"></div>
       <div class="legend" id="l-gmvocab"></div>
     </div>
     <div class="callout">
-      <b>2025+ vs. 2019–2024</b> (permutation test, 20,000 shuffles): net tone <span class="mono">−0.8 → −14.7</span> (p&lt;0.001); wind-down vocabulary <span class="mono">7% → 66%</span> (p&lt;0.001). The turn begins at the October 2023 pedestrian accident, not the December 2024 funding decision.
+      <b>Out-of-sample check, pre-registered:</b> list v3 (41 terms) matches <span class="mono">10.7%</span> of GM's robotaxi passages before 2023Q4 and <span class="mono">14.2%</span> from 2023Q4, a difference of <span class="mono">+3.6</span> points (95% CI −0.5 to +7.0). The declared test was whether that interval lies above zero. It does not, so <b>the wind-down reading is not confirmed out of sample.</b> The original post-hoc list goes from 0% to 47.6% over the same cut. List v3 is a weak detector: only 10 of its 41 terms ever appear in these passages, the two most common (<i>eliminated</i>, <i>transferred</i>) are accounting words that appear every year from 2019, and it also matches 30–37% of Tesla's autonomy passages, though Tesla never exited. Read this as a failed confirmation, not as evidence against a wind-down. <a href="https://github.com/tcontorno6/edgar-autonomy/tree/main/prereg/winddown_v3">Protocol, freeze hash and every deviation</a>.
     </div>
   </section>
 
@@ -215,6 +239,8 @@ footer a{color:var(--accent)}
           <li><b>Attention.</b> Curated keyword set, two groups, word-boundary and case-sensitive matching; table and corporate-transaction hits excluded.</li>
           <li><b>Quantification.</b> Regex + a local relevance model; every number must match its source sentence at stored offsets. 0 citation failures.</li>
           <li><b>Stance.</b> Loughran-McDonald lexicons, scored on the autonomy sentence only, reported relative to same-section baseline.</li>
+          <li><b>Rates.</b> Every per-1,000-word figure is word-level: category words summed over passages ÷ scored words summed × 1,000, not an average of per-passage rates. Finding 05's intervals resample whole filings (10,000 draws).</li>
+          <li><b>Wind-down list v3.</b> Derived only from Uber's ATG sale, Lyft's Level 5 sale and Ford's Argo AI exit filings, by a model given only those passages; frozen, hashed and published before GM was scored; never edited after.</li>
         </ul>
       </div>
       <div class="panel">
@@ -239,6 +265,7 @@ footer a{color:var(--accent)}
       <ul>
         <li><b>Lexicon positive class.</b> Loughran-McDonald counts <i>gain</i> and <i>benefit</i> regardless of subject; short accounting sentences can score as upbeat. Positive-tone levels should be read with care (10/15 positive extremes matched the rater's read).</li>
         <li><b>Stance validation is an upper bound, and it was not done by a human.</b> The 45 passages were the 15 scored most positive, the 15 most negative and the 15 most hedged: a stratified sample of extremes, not a random one. Extremes are easier to classify than the ambiguous middle, so 80% agreement (36/45, CI 66–89%) is an upper bound. The rater was Claude, the AI assistant that built the scorer, and it saw the model's label before deciding. This was unblinded self-rating. Cohen's κ is <span class="mono">0.73</span> (bootstrap 95% CI 0.57–0.87), over four categories (positive, negative, hedged, off-target). It is computed on this constructed sample, whose 15/15/15 label mix was fixed by design, and does not generalize to the full corpus. All 9 disagreements are passages the rater judged off-target; it never assigned the opposite stance.</li>
+        <li><b>GM's turning point was read off the data.</b> 2023Q4 was picked by looking at GM's tone series; Finding 05 corrects its p-value for that choice. The original wind-down list was written after reading GM's filings, so it describes the wind-down rather than testing for it; the version fixed in advance does not confirm it.</li>
         <li><b>Text only.</b> Earnings-call transcripts, where most operational numbers are spoken, are out of scope. This measures what reaches the legal record.</li>
         <li><b>Chart-only figures excluded.</b> Tesla's paid Robotaxi miles appear only as chart axes; the extractor rejects them rather than invent a value.</li>
         <li><b>Small samples.</b> Alphabet (1 number) and Amazon (4) are descriptive, not trends. One reviewer set all labels; there is no inter-rater measure.</li>
@@ -282,6 +309,8 @@ const DATA={
 // GM series
 const GM=[18.366,26.735,20.320,22.227,25.572,23.628,19.968,21.192,14.041,15.547,22.751,20.395,9.762,6.785,4.644,7.874,8.758,11.112,7.675,-3.905,-9.533,-3.925,-10.463,-2.516,-8.087,11.742,-4.164,-2.628,-5.330,0.341,-8.338];
 const GMWD=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7.1,31.0,15.0,40.0,31.2,33.3,66.7,83.3,73.7,69.6,88.9,90.9];
+// wind-down list v3: derived only from Uber/Lyft/Ford exit filings, frozen before GM was scored (prereg/winddown_v3)
+const GMWD3=[17.14,0,15.79,11.76,12.5,9.09,18.18,20,15.79,7.14,7.14,6.25,4.55,6.67,5.88,6.25,11.54,9.09,8.33,21.43,10.34,15,10,9.38,12.12,16.67,16.67,15.79,17.39,22.22,18.18];
 const GMEX=[22.9,40,31.6,29.4,29.2,36.4,45.5,40,31.6,35.7,35.7,43.8,31.8,33.3,29.4,31.2,26.9,36.4,33.3,21.4,27.6,35,35,28.1,9.1,16.7,11.1,5.3,4.3,11.1,9.1];
 
 const NS="http://www.w3.org/2000/svg";
@@ -402,11 +431,13 @@ function gmVocab(){const host=document.getElementById("c-gmvocab");const w=W(hos
   DATA.quarters.forEach((q,i)=>{if(q.endsWith("Q1"))s.appendChild(txt(X(i),h-8,q.slice(0,4),{ta:"middle",fs:10.5,mono:true,fill:css("--faint")}));});
   const line=(arr,col)=>{let d="";arr.forEach((v,i)=>d+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
     s.appendChild(E("path",{d,fill:"none",stroke:col,"stroke-width":2.2,"stroke-linejoin":"round","stroke-linecap":"round"}));};
-  line(GMEX,css("--pos"));line(GMWD,css("--neg"));
-  s.appendChild(txt(X(n-1)+4,Y(GMWD[n-1]),"wind-down",{db:"middle",fs:10.5,fw:600,fill:css("--neg"),ta:"end"}));
+  line(GMEX,css("--pos"));line(GMWD,css("--neg"));line(GMWD3,css("--accent"));
+  s.appendChild(txt(X(n-1)+4,Y(GMWD[n-1]),"original list",{db:"middle",fs:10.5,fw:600,fill:css("--neg"),ta:"end"}));
+  s.appendChild(txt(X(n-1)+4,Y(GMWD3[n-1])-10,"list v3",{db:"middle",fs:10.5,fw:600,fill:css("--accent"),ta:"end"}));
   document.getElementById("l-gmvocab").innerHTML=
-    `<span><i class="swatch" style="background:${css('--neg')}"></i>wind-down vocabulary</span>`+
-    `<span><i class="swatch" style="background:${css('--pos')}"></i>expansion vocabulary</span>`;
+    `<span><i class="swatch" style="background:${css('--accent')}"></i>wind-down, list v3 (fixed in advance)</span>`+
+    `<span><i class="swatch" style="background:${css('--neg')}"></i>wind-down, original list (post-hoc)</span>`+
+    `<span><i class="swatch" style="background:${css('--pos')}"></i>expansion (post-hoc)</span>`;
 }
 
 function fillTable(){const tb=document.getElementById("t-quant");tb.innerHTML="";

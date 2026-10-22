@@ -176,25 +176,80 @@ than baseline for all six (−3 to −10 per 1k).
 - Kappa is computed on this constructed sample, whose 15/15/15 label mix was fixed by design.
   It does not generalize to the full corpus.
 
-### 5. GM: the robotaxi language is a wind-down, and it turns in late 2023
+### 5. GM: the robotaxi language turns sharply negative from late 2023; a word test fixed in advance does not confirm it as wind-down talk
 
-GM's robotaxi passages, outside risk factors and legends:
+GM's robotaxi passages, outside risk factors and legends (565 passages in 58 filings):
 - **Tone vs baseline:** about **+20 per 1k** through 2021, **+5 to +10** in 2022–23, and
   **negative from 2023Q4** (−3 to −10 in most quarters since).
-- **Wind-down vocabulary** (wind down, no longer fund, pause, restructur-…): **0%** of
-  passages 2019–22, **30%** in 2024, **79%** in 2026.
-- **Expansion vocabulary:** from ~30% to 7%.
 
-2025+ vs 2019–2024 (permutation test, 20,000 shuffles):
-- net tone **−0.8 → −14.7** per 1k (p < 0.001)
-- negative **7.7 → 16.8** (p < 0.001)
-- wind-down vocabulary **7% → 66%** (p < 0.001)
-- constraining language **falls** (4.3 → 1.2, p = 0.04)
+**Before vs from 2023Q4**, split by filing date (filed by 2023-09-30 vs from 2023-10-01).
+Rates are word-level (category words summed over passages ÷ scored words summed × 1,000);
+95% intervals resample whole filings (10,000 draws):
 
-The negativity is financial (restructuring, losses, termination, impairment), not
-regulatory. The turn begins at the October 2023 pedestrian accident and pause, a year
-before the December 2024 decision to stop funding Cruise's robotaxi work. GM's high M2
-attention in 2024–25 is mostly the language of shutting Cruise down.
+| | Filings | Passages | Negative /1k | Net tone /1k |
+|---|---|---|---|---|
+| Before 2023Q4 | 33 | 319 | **7.2** (5.8–8.8) | +1.8 (−0.5 to 4.4) |
+| From 2023Q4 | 25 | 246 | **19.6** (16.4–22.1) | −16.5 (−19.3 to −13.0) |
+| Change | | | **+12.3** (8.9–15.2) | −18.3 (−22.1 to −14.3) |
+
+- Permutation test (20,000 shuffles of filings across the cut): p = 0.00005. That p is
+  nominal, because 2023Q4 was picked by looking at this series. Over every quarterly cut from
+  2020Q1 to 2025Q4, the largest gap is at 2023Q4, and the max-statistic p, which corrects for
+  choosing the cut, is **0.0006**.
+- The gap grows steadily through 2022–23 (8.6 to 12.0 per 1k for cuts in 2020–2023Q3) before
+  peaking at 2023Q4. With repeated boilerplate removed (383 distinct passages), the change is
+  still +11.6 (7.0–15.5), but the largest gap moves to **2022Q2**. The test shows a change in
+  level; it cannot tell a sharp break at 2023Q4 from a gradual slide.
+- Earlier versions of this write-up split at 2025 and averaged per-passage rates
+  (7.7 → 16.8). That put 2024, the most negative year, in the "before" group. Both are
+  replaced here; the per-passage mean at 2023Q4 is 5.5 → 15.4 and is not used elsewhere.
+- Constraining words do not rise (3.2 → 2.8 per 1k, word-level, no interval computed). The top
+  negative words are financial (restructuring, losses, termination, impairment), not
+  regulatory.
+
+**By year** (word-level; filing-resampled 95% intervals; ⚑ = fewer than 5 filings):
+
+| Filed | Filings | Passages | Negative /1k | Net tone /1k | Wind-down share, list v3 (fixed in advance) | Wind-down share, original list (post-hoc) |
+|---|---|---|---|---|---|---|
+| 2019 | 10 | 81 | 5.4 (2.0–7.6) | +4.5 (1.2–11.4) | 14% (6–36) | 0% (0–28)† |
+| 2020 | 8 | 56 | 8.2 (6.3–11.2) | +6.3 (0.9–11.8) | 14% (11–25) | 0% (0–32)† |
+| 2021 ⚑ | 4 | 63 | 4.2 (1.5–5.6) | +4.8 (2.0–8.6) | 10% (6–14) | 0% (0–49)† |
+| 2022 | 5 | 70 | 10.4 (6.6–13.6) | −4.1 (−7.6 to 0.0) | 6% (5–6) | 0% (0–43)† |
+| 2023 Jan–Sep | 6 | 49 | 7.8 (6.4–9.6) | −1.1 (−4.6 to 0.0) | 10% (6–11) | 0% (0–39)† |
+| 2023 Oct–Dec ⚑ | 3 | 14 | 18.7 (0.0–20.8) | −16.4 (−18.2 to 0.0) | 21% (0–100) | 7% (0–8) |
+| 2024 | 10 | 101 | 21.8 (17.2–24.7) | −18.4 (−21.9 to −11.5) | 11% (9–13) | 30% (23–35) |
+| 2025 | 7 | 88 | 17.4 (11.8–22.7) | −14.5 (−19.4 to −8.2) | 15% (12–18) | 59% (40–78) |
+| 2026 Jan–Sep (partial) | 5 | 43 | 19.4 (17.3–26.3) | −16.9 (−26.3 to −14.9) | 19% (14–21) | 79% (70–93) |
+
+† 0% in every draw; the interval is Wilson at n = filings. The two wind-down columns differ in
+both the word list and the matching rule.
+
+**Wind-down vocabulary, tested out of sample.** The original wind-down list (wind down, no
+longer fund, pause, suspend, restructur-, refocus, discontinue, cease, exit) was written after
+reading GM's filings and never frozen. Its rise from 0% to 79% of passages describes the
+wind-down; it is not independent evidence of it. It also scores 0% on Uber's ATG sale and
+Lyft's Level 5 sale, whose filings say "sale" and "divestiture".
+
+List v3 replaces it as the test. It was derived only from the filings for three non-GM exits
+(Uber's sale of ATG to Aurora, Lyft's sale of Level 5 to Woven Planet, Ford's exit from Argo
+AI): 27 documents, 480 passages. One model given only those passages picked the terms;
+mechanical filters left 41. The protocol was committed publicly before anything ran, and the
+list was frozen, hashed and published before GM was scored (`prereg/winddown_v3/`).
+
+- **Declared test:** the change in the share of GM passages matching list v3, before vs from
+  2023Q4, with a filing-resampled 95% interval; supported only if the interval lies above zero.
+- **Result:** 10.7% → 14.2%, **+3.6 points (−0.5 to +7.0)**. **Not supported out of sample.**
+  The original list goes 0% → 47.6% over the same cut.
+- List v3 is a weak detector, so this is a failed confirmation, not evidence against a
+  wind-down. Only 10 of its 41 terms ever appear in GM's robotaxi passages. The two most
+  common, *eliminated* and *transferred*, are accounting words that appear every year from
+  2019. It also matches 30–37% of Tesla's autonomy passages, though Tesla never exited, and 0%
+  of Alphabet's and Amazon's. A secondary version with a looser filter (adds "acquisition")
+  gives +7.2 points (2.1–12.0); it was not the declared test.
+
+GM's high M2 attention in 2024–25 coincides with this negative turn and with the Cruise
+wind-down GM announced in December 2024, but the vocabulary test fixed in advance does not
+show that the language itself is wind-down talk.
 
 ## Limitations
 
@@ -206,7 +261,9 @@ attention in 2024–25 is mostly the language of shutting Cruise down.
   words, but positive-tone levels should be read with care.
 - **Wording vs events.** A lexicon measures language, not facts. GM's December 2024 release
   frames the Cruise wind-down positively. Wind-down and expansion vocabulary are reported
-  next to tone for that reason.
+  next to tone for that reason. Both original vocabularies were written after reading GM's
+  filings; only the wind-down list has an out-of-sample version (list v3), and it does not
+  confirm the original.
 - **Chart-only figures were deliberately not extracted.** Tesla's paid Robotaxi miles and
   FSD-miles-by-version appear only as chart images. In filing text they are axis ticks,
   which the extractor rejects rather than guessing. The quantification count is a count
