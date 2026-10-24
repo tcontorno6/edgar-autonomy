@@ -1,6 +1,7 @@
 # Dashboard data (tidy CSVs)
 
-Built by `python scripts\export_dashboard.py`. One row per observation. Quarters are
+Sections 1–4 are built by `python scripts\export_dashboard.py`; the section 5 files are not (see
+section 5). One row per observation. Quarters are
 **calendar quarters of the filing date** (`quarter` = `2025Q3`; `quarter_start` = ISO date).
 Booleans are `True`/`False`. Empty cells mean "not defined" (e.g. no words that
 quarter), never zero.
@@ -85,5 +86,54 @@ robotaxi, driverless…), outside risk factors and legends.
 | robotaxi_net_tone_per_1k | net tone of those passages |
 | robotaxi_net_tone_vs_baseline | minus the same filings' same-section non-autonomy baseline |
 | negative_per_1k, constraining_per_1k, positive_per_1k | LM category rates |
-| winddown_vocab_pct | % of passages with wind down / no longer fund / pause / suspend / restructur- / refocus / discontinue / cease / exit |
-| expansion_vocab_pct | % of passages with launch / expand / scale / commercialize / growth / new cities or markets |
+| winddown_vocab_pct | **Original list, written after reading GM's filings (post-hoc; not independent evidence).** % of passages with wind down / no longer fund / pause / suspend / restructur- / refocus / discontinue / cease / exit |
+| expansion_vocab_pct | From the original analysis; no version fixed in advance. % of passages with launch / expand / scale / commercialize / growth / new cities or markets |
+
+The out-of-sample replacement for `winddown_vocab_pct` is in section 5.
+
+## 5. GM breakpoint and out-of-sample wind-down list (Finding 05 revision)
+
+Same GM robotaxi view as section 4 (565 passages, 58 filings). Rows are calendar years of the
+filing date; 2023 also has a pre-cut row (filed Jan 1 to Sep 30) and a post-cut row (filed
+Oct 1 to Dec 31); 2026 is a partial year (filed Jan 1 to Sep 30). Intervals are percentile 95%
+intervals from 10,000 bootstrap draws that resample whole filings (an 8-K and its exhibits are
+one filing) within each row. Plan and frozen list: `prereg/winddown_v3/`. These three files are
+the outputs of the Phase B/C scripts run under `prereg/winddown_v3/PHASE_BC.md` (Desktop
+commit 084d484, not yet in this repository), copied here without their constant `freeze_sha`
+and `frozen_sha256` columns. Negative and net-tone rates are raw, not baseline-adjusted.
+
+### 5a. `gm_breakpoint_by_year.csv`
+
+| Column | Meaning |
+|---|---|
+| year | row label (see above) |
+| n_accessions, n_passages | filings and passages in the row |
+| scored_words, negative_words | summed over the row's passages (`words`, `negative` columns of the corpus file `passages.csv`, not redistributed) |
+| neg_per_1k, neg_per_1k_boot_lo/hi | **word-level** negative rate, negative_words / scored_words × 1000: the estimator used on the page |
+| neg_mean, neg_mean_boot_lo/hi | per-passage mean of the negative rate (passages with scored words only): secondary, not used on the page |
+| net_per_1k, net_per_1k_boot_lo/hi | word-level (positive − negative) / scored words × 1000 |
+| forms_accessions | filings by form |
+| flags | `few filings; interval unreliable` when fewer than 5 filings |
+
+### 5b. `gm_winddown_v3_by_year.csv`
+
+Two lists side by side. **frozen_\*** = list v3: 41 terms derived only from the Uber/ATG,
+Lyft/Level 5 and Ford/Argo exit filings, frozen and hashed before GM was scored, matched with
+the regexes stored in `prereg/winddown_v3/frozen_winddown_terms_v3.json`. **original_\*** = the
+post-hoc list of section 4, matched with its original code. Differences between the columns
+reflect both the word list and the matching rule. The last two rows are the declared test:
+filed on or before 2023-09-30 vs on or after 2023-10-01.
+
+| Column | Meaning |
+|---|---|
+| row, n_accessions, n_passages, forms_accessions | as in 5a |
+| *_hits, *_share | passages matching at least one term; hits / n_passages |
+| *_boot_lo/hi | filing-resampled interval; for a `degenerate` cell (share 0 or 1 in every draw) it is the Wilson interval at n = filings |
+| *_wilson_passages_lo/hi | Wilson interval at n = passages (assumes independent passages; narrower than it should be) |
+| *_flags | `degenerate`, `few filings; interval unreliable` |
+
+### 5c. `gm_winddown_v3_quarterly.csv`
+
+One row per filing quarter (2019Q1 to 2026Q3): n_accessions, n_passages, and hits and share for
+each list. Counts only, no intervals; this is the series behind the vocabulary chart.
+
