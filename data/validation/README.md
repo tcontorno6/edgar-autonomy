@@ -1,6 +1,6 @@
 # Stance validation samples (M4)
 
-`stance_validation_v1.csv` and `stance_validation_v2.csv` (v2 is the published 80%) each hold
+`stance_validation_v1.csv` and `stance_validation_v2.csv` (v2 is the published 80% self-consistency figure; it measures consistency between the scorer's labels and its builder's second read, not correctness, and is not a validation) each hold
 45 passages: the 15 scored most positive, the 15 most negative and the 15 most hedged. They are
 constructed samples of extremes, not random draws.
 

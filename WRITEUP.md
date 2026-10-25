@@ -21,7 +21,8 @@ Every data point traces back to the exact sentence and SEC document it came from
 **What the project established.** The six companies disclosed **29 distinct operational
 autonomy numbers across 1,137 documents**, and most of their autonomy language is boilerplate:
 53% of the 7,218 counted mentions sit in sentences repeated word for word in three or more
-filings, and 46% sit in risk factors. Two pre-registered attempts to extract a forward-looking
+filings. Separately (the two measures overlap and do not add), 46% of the mentions sit in risk
+factors. Two pre-registered attempts to extract a forward-looking
 signal from the language failed (§5): a wind-down word list fixed in advance, and a real-time
 alarm test of GM's tone break. The nulls follow from the scarcity: outside boilerplate, only GM
 has enough company-specific robotaxi text in most quarters to measure, so a signal can neither
@@ -170,14 +171,14 @@ Five of six companies write about autonomy measurably more positively than about
 of the same sections; Lyft is indistinguishable. Autonomy passages are also less uncertain
 than baseline for all six (−3 to −10 per 1k).
 
-*Validation (15 most positive + 15 most negative + 15 most hedged passages):*
-- **v2 (final): 36/45 = 80%** (CI 66–89%): negative 13/15, hedged 13/15, positive 10/15.
+*Self-consistency check, not a validation (15 most positive + 15 most negative + 15 most hedged passages):*
+- **v2 (final): 36/45 = 80%**: negative 13/15, hedged 13/15, positive 10/15. It measures consistency between the scorer's labels and its builder's own second read of the same passages, not whether either is correct.
   (An earlier version reported Cohen's kappa 0.73 here. It was computed between the scorer's
   labels and its own builder's unblinded read, so it is not an inter-rater measure and is no
   longer reported as validation; `analysis/stance_kappa.py` keeps the calculation.)
-- v1 (scoring a ±1-sentence window): 34/45 = 75.6% (61–86%), with negative only 8/15.
+- v1 (scoring a ±1-sentence window): 34/45 = 75.6%, with negative only 8/15.
 - The v2 sample is a fresh draw with no overlap with v1.
-- **This is an upper bound, not an accuracy estimate.** The 45 passages are a stratified
+- **This is not an accuracy estimate.** The 45 passages are a stratified
   sample of extremes, the 15 highest-scoring passages in each class, not a random sample.
   Extremes are easier to classify than the ambiguous middle of the distribution.
 - **Who rated, and blinding.** The repository record shows **unblinded self-rating with no
@@ -332,7 +333,7 @@ quarter with GM's own earlier eligible quarters, using only filings filed by tha
 | M1 | CIKs vs EDGAR; fetch and clean | 6/6 verified; 0 errors |
 | M2 | fresh 90-hit sample, frozen rules | 1.1% wrong-sense (0.2–6.0); 84.4% strict precision (75.6–90.5) |
 | M3 | seeded 20-row sample, frozen v1 | values 100% (84–100); value + claim 95% (76–99); all qualifiers 80% (58–92); citation check 0 failures |
-| M4 | 45 extremes (15 per class, not random), fresh v2 draw, unblinded self-rating by Claude | 80% match (66–89), an upper bound, not an independent validation; v1 was 75.6% |
+| M4 | 45 extremes (15 per class, not random), fresh v2 draw, unblinded self-rating by Claude | 80% match: a self-consistency check, not a validation (consistency between scorer and builder, not correctness); v1 was 75.6% |
 
 - **One coder.** All labels were set by one reviewer (Claude, with Tyler approving each
   rule change). There is no inter-rater agreement measure. For M4 the rater also saw the
