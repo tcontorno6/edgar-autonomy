@@ -18,6 +18,15 @@ For six companies we measure, over time:
 
 Every data point traces back to the exact sentence and SEC document it came from.
 
+**What the project established.** The six companies disclosed **29 distinct operational
+autonomy numbers across 1,137 documents**, and most of their autonomy language is boilerplate:
+53% of the 7,218 counted mentions sit in sentences repeated word for word in three or more
+filings, and 46% sit in risk factors. Two pre-registered attempts to extract a forward-looking
+signal from the language failed (§5): a wind-down word list fixed in advance, and a real-time
+alarm test of GM's tone break. The nulls follow from the scarcity: outside boilerplate, only GM
+has enough company-specific robotaxi text in most quarters to measure, so a signal can neither
+be built well nor checked against the other companies.
+
 ## Data
 
 | | |
@@ -163,22 +172,23 @@ than baseline for all six (−3 to −10 per 1k).
 
 *Validation (15 most positive + 15 most negative + 15 most hedged passages):*
 - **v2 (final): 36/45 = 80%** (CI 66–89%): negative 13/15, hedged 13/15, positive 10/15.
-  **Cohen's kappa 0.73** (bootstrap 95% CI 0.57–0.87), over four categories (positive,
-  negative, hedged, off-target).
-- v1 (scoring a ±1-sentence window): 34/45 = 75.6% (61–86%), with negative only 8/15;
-  kappa 0.67 (0.52–0.81).
+  (An earlier version reported Cohen's kappa 0.73 here. It was computed between the scorer's
+  labels and its own builder's unblinded read, so it is not an inter-rater measure and is no
+  longer reported as validation; `analysis/stance_kappa.py` keeps the calculation.)
+- v1 (scoring a ±1-sentence window): 34/45 = 75.6% (61–86%), with negative only 8/15.
 - The v2 sample is a fresh draw with no overlap with v1.
 - **This is an upper bound, not an accuracy estimate.** The 45 passages are a stratified
   sample of extremes, the 15 highest-scoring passages in each class, not a random sample.
   Extremes are easier to classify than the ambiguous middle of the distribution.
 - **Who rated, and blinding.** The rater was Claude, the AI assistant that built the scorer,
   not a human. It saw the model's label before deciding (each sample ID names the label, e.g.
-  `most_positive-14`). This was **unblinded self-rating**. All 9 disagreements are passages
+  `most_positive-14`; the label sits beside each passage in the rating file; the notes judge
+  it, "label right, but…"). This was **unblinded self-rating**, with no second rater. The
+  original M4 notes called these "human" reads and the column is still named `human_label`,
+  but no human set the labels. All 9 disagreements are passages
   the rater judged off-target; it never assigned the opposite stance.
 - Two of the 15 hedged passages were picked partly because the scorer counted "May Mobility"
   as the modal "may"; that bug was fixed after this check.
-- Kappa is computed on this constructed sample, whose 15/15/15 label mix was fixed by design.
-  It does not generalize to the full corpus.
 
 ### 5. GM: the robotaxi language is far more negative from late 2023 than before; a word test fixed in advance does not confirm it as wind-down talk
 
@@ -272,6 +282,25 @@ Level 5 sale 2021-04-26, Ford's Argo AI wind-down 2022-10-26.
   short by the 2019 IPOs. Moving to that view would change the method so the test could run,
   so it was not run, and Ford's tone was never computed.
 
+**Real time: no clean warning (`prereg/realtime_v1/`).** Three alarm rules were committed before
+running (3-sigma; 2-sigma for two quarters running; a lower CUSUM, k 0.5, h 5), each comparing a
+quarter with GM's own earlier eligible quarters, using only filings filed by that quarter's end.
+- The alarms nearest the 2024-12-10 decision are the CUSUM at 2023Q4 and the 3-sigma and 2-sigma
+  rules at 2024Q1 (lead 345 and 254 days). Every one fires after the October 2023 crash, permit
+  suspension and nationwide pause were public; `quarter` is the filing-date quarter, so these
+  alarms rest on filings filed from October 2023 on. They react to known news. The 3-sigma rule
+  does not fire at 2023Q4.
+- GM's own false alarms: 2-sigma at 2021Q2 and 2022Q2, CUSUM at 2022Q2; none was followed within
+  a year by an exit, sale, shutdown or pause.
+- **The moving yardstick.** Each quarter is judged against everything before it, so a gradual
+  decline inflates its own variance estimate and raises the bar it must clear (reference SD 2.9
+  in 2021Q1, 7.1 by 2023Q4; mean 22.3 to 16.2). Self-referential expanding-window alarms fail on
+  slow deterioration, the failure mode that matters most here.
+- No false-alarm rate: on the other five, Amazon has 0 usable quarters, Alphabet and Lyft 1,
+  Uber 3, and Tesla reaches enough history only in 2026Q3. The view was not widened.
+- Not blind: the rules' author had read GM's series. One event noticed after scoring (the June
+  2022 Cruise crash) was not added; it would change one secondary classification only.
+
 ## Limitations
 
 - **Lexicon positive class.** Loughran-McDonald counts *gain*, *benefit* and *collaborat-*
@@ -302,12 +331,11 @@ Level 5 sale 2021-04-26, Ford's Argo AI wind-down 2022-10-26.
 | M1 | CIKs vs EDGAR; fetch and clean | 6/6 verified; 0 errors |
 | M2 | fresh 90-hit sample, frozen rules | 1.1% wrong-sense (0.2–6.0); 84.4% strict precision (75.6–90.5) |
 | M3 | seeded 20-row sample, frozen v1 | values 100% (84–100); value + claim 95% (76–99); all qualifiers 80% (58–92); citation check 0 failures |
-| M4 | 45 extremes (15 per class, not random), fresh v2 draw, unblinded self-rating by Claude | 80% match (66–89), an upper bound; kappa 0.73 (0.57–0.87); v1 was 75.6% |
+| M4 | 45 extremes (15 per class, not random), fresh v2 draw, unblinded self-rating by Claude | 80% match (66–89), an upper bound, not an independent validation; v1 was 75.6% |
 
 - **One coder.** All labels were set by one reviewer (Claude, with Tyler approving each
   rule change). There is no inter-rater agreement measure. For M4 the rater also saw the
-  model's label before deciding; the kappa above is model-vs-rater agreement, not
-  inter-rater agreement.
+  model's label before deciding, so the M4 figure is a self-check, not a validation.
 - **Bootstrap CIs on stance** resample passages independently. Boilerplate repeats across
   filings make passages correlated, so the intervals are somewhat narrow. Finding 5's
   intervals instead resample whole filings.

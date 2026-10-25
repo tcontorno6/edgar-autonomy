@@ -7,4 +7,6 @@ constructed samples of extremes, not random draws.
 The `human_label` column name is historical. The labels were set by Claude, the AI assistant that
 built the scorer, not by a human, and the rater could see `model_label` (and the sample ID, which
 names it) while labeling: unblinded self-rating. `analysis/stance_kappa.py` computes Cohen's kappa
-from these files (v2: 0.73, bootstrap 95% CI 0.57 to 0.87).
+from these files (v2: 0.73, bootstrap 95% CI 0.57 to 0.87). That kappa is between `model_label`
+and the scorer-builder's own unblinded read, so it is not an inter-rater measure; it is no longer
+reported as validation. Provenance audit: `PROVENANCE.md`.
