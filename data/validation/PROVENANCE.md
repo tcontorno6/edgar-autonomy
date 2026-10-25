@@ -20,14 +20,20 @@ M4 notes where they are the cited source. Nothing was re-rated or re-run.
   publish: "one reviewer (Claude…)"; validation README). The earlier "human read" wording in the
   M4 notes and first WRITEUP describes the kind of reading, not a person, and no artifact names a
   human rater. Labels were stored as code in a labelling script, and the v2 file appears 7 minutes
-  after the v1 review (03:35 to 03:42 UTC, 2026-10-01). **Supported: the labels were set by
-  Claude.** Not directly verified: the labelling script itself, which is not in the repo.
+  after the v1 review (03:35 to 03:42 UTC, 2026-10-01). The record is consistent with labels set
+  by Claude and names no one else. **Gap:** the labelling script (`scripts\label_m4.py`) is not in
+  the repository and has not been reviewed, so the record cannot confirm who ran it.
 - **Whether the rater saw the model's label first.** Yes, from the files themselves: every row
   carries `model_label` next to the text, the `sample_id` names the class, and the notes evaluate
   the model's label ("label right, but 'May Mobility' was counted as the modal 'may'"). **Unblinded.**
 - **A second rater.** None. Each file has one rater column; no other ratings exist in the repo.
 - **What kappa was computed between.** `model_label` (the scorer) and `human_label` (the
   scorer-builder's unblinded read). It is not inter-rater agreement.
+
+## Summary
+
+The repository record shows unblinded self-rating with no second rater. The labeling script is not
+in the repository and has not been reviewed.
 
 ## Consequence for the page
 

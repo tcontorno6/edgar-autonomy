@@ -180,12 +180,13 @@ than baseline for all six (−3 to −10 per 1k).
 - **This is an upper bound, not an accuracy estimate.** The 45 passages are a stratified
   sample of extremes, the 15 highest-scoring passages in each class, not a random sample.
   Extremes are easier to classify than the ambiguous middle of the distribution.
-- **Who rated, and blinding.** The rater was Claude, the AI assistant that built the scorer,
-  not a human. It saw the model's label before deciding (each sample ID names the label, e.g.
-  `most_positive-14`; the label sits beside each passage in the rating file; the notes judge
-  it, "label right, but…"). This was **unblinded self-rating**, with no second rater. The
-  original M4 notes called these "human" reads and the column is still named `human_label`,
-  but no human set the labels. All 9 disagreements are passages
+- **Who rated, and blinding.** The repository record shows **unblinded self-rating with no
+  second rater**. The labeling script is not in the repository and has not been reviewed. What
+  the record shows: the rating files carry the model's label beside each passage, each sample ID
+  names it (e.g. `most_positive-14`), and the notes judge it ("label right, but…"); the only
+  statements of who rated name Claude, the AI assistant that built the scorer; each file has one
+  rater column. The original M4 notes called these "human" reads and the column is still named
+  `human_label`, but no artifact names a human rater. All 9 disagreements are passages
   the rater judged off-target; it never assigned the opposite stance.
 - Two of the 15 hedged passages were picked partly because the scorer counted "May Mobility"
   as the modal "may"; that bug was fixed after this check.
