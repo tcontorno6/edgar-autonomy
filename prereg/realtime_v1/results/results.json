@@ -1,0 +1,273 @@
+{
+ "AMZN": {
+  "eligible_quarters": 0,
+  "evaluated_quarters": 0,
+  "R1": {
+   "feasible": false
+  },
+  "R2": {
+   "feasible": false
+  },
+  "R3": {
+   "feasible": false
+  }
+ },
+ "GM": {
+  "eligible_quarters": 31,
+  "evaluated_quarters": 23,
+  "R1": {
+   "feasible": true,
+   "evaluated": 23,
+   "firing_quarters": [
+    "2024Q1"
+   ],
+   "episodes": [
+    {
+     "start": "2024Q1",
+     "quarters": [
+      "2024Q1"
+     ],
+     "end_date": "2024-03-31",
+     "tier1_after": [
+      "GM ends funding of Cruise robotaxi development (the target)",
+      "GM completes folding Cruise into GM, robotaxi work ended"
+     ],
+     "tier12_after": [
+      "NHTSA civil penalty against Cruise ($1.5M)",
+      "Cruise deferred prosecution agreement ($500k)",
+      "GM ends funding of Cruise robotaxi development (the target)",
+      "GM completes folding Cruise into GM, robotaxi work ended"
+     ],
+     "events_in_or_before_quarter": [
+      "Cruise software recall (80 vehicles) after June 2022 crash",
+      "NHTSA opens preliminary evaluation of Cruise hard braking",
+      "Cruise vehicle drags pedestrian in San Francisco",
+      "California DMV suspends Cruise driverless permits",
+      "Cruise pauses driverless operations nationwide",
+      "Cruise recall of 950 vehicles",
+      "Cruise CEO Kyle Vogt resigns",
+      "Cruise lays off about 24% of staff"
+     ]
+    }
+   ],
+   "unfollowed_tier1": 0,
+   "unfollowed_tier12": 0,
+   "first_firing": "2024Q1",
+   "lead_days_to_2024_12_10": 254,
+   "lead_quarters": 3
+  },
+  "R2": {
+   "feasible": true,
+   "evaluated": 22,
+   "firing_quarters": [
+    "2021Q2",
+    "2022Q2",
+    "2022Q3",
+    "2024Q1",
+    "2024Q2"
+   ],
+   "episodes": [
+    {
+     "start": "2021Q2",
+     "quarters": [
+      "2021Q2"
+     ],
+     "end_date": "2021-06-30",
+     "tier1_after": [],
+     "tier12_after": [],
+     "events_in_or_before_quarter": []
+    },
+    {
+     "start": "2022Q2",
+     "quarters": [
+      "2022Q2",
+      "2022Q3"
+     ],
+     "end_date": "2022-06-30",
+     "tier1_after": [],
+     "tier12_after": [
+      "Cruise software recall (80 vehicles) after June 2022 crash",
+      "NHTSA opens preliminary evaluation of Cruise hard braking"
+     ],
+     "events_in_or_before_quarter": []
+    },
+    {
+     "start": "2024Q1",
+     "quarters": [
+      "2024Q1",
+      "2024Q2"
+     ],
+     "end_date": "2024-03-31",
+     "tier1_after": [
+      "GM ends funding of Cruise robotaxi development (the target)",
+      "GM completes folding Cruise into GM, robotaxi work ended"
+     ],
+     "tier12_after": [
+      "NHTSA civil penalty against Cruise ($1.5M)",
+      "Cruise deferred prosecution agreement ($500k)",
+      "GM ends funding of Cruise robotaxi development (the target)",
+      "GM completes folding Cruise into GM, robotaxi work ended"
+     ],
+     "events_in_or_before_quarter": [
+      "Cruise software recall (80 vehicles) after June 2022 crash",
+      "NHTSA opens preliminary evaluation of Cruise hard braking",
+      "Cruise vehicle drags pedestrian in San Francisco",
+      "California DMV suspends Cruise driverless permits",
+      "Cruise pauses driverless operations nationwide",
+      "Cruise recall of 950 vehicles",
+      "Cruise CEO Kyle Vogt resigns",
+      "Cruise lays off about 24% of staff"
+     ]
+    }
+   ],
+   "unfollowed_tier1": 2,
+   "unfollowed_tier12": 1,
+   "first_firing": "2021Q2",
+   "lead_days_to_2024_12_10": 1259,
+   "lead_quarters": 14
+  },
+  "R3": {
+   "feasible": true,
+   "evaluated": 23,
+   "firing_quarters": [
+    "2022Q2",
+    "2023Q4",
+    "2024Q3"
+   ],
+   "episodes": [
+    {
+     "start": "2022Q2",
+     "quarters": [
+      "2022Q2"
+     ],
+     "end_date": "2022-06-30",
+     "tier1_after": [],
+     "tier12_after": [
+      "Cruise software recall (80 vehicles) after June 2022 crash",
+      "NHTSA opens preliminary evaluation of Cruise hard braking"
+     ],
+     "events_in_or_before_quarter": []
+    },
+    {
+     "start": "2023Q4",
+     "quarters": [
+      "2023Q4"
+     ],
+     "end_date": "2023-12-31",
+     "tier1_after": [
+      "GM ends funding of Cruise robotaxi development (the target)"
+     ],
+     "tier12_after": [
+      "NHTSA civil penalty against Cruise ($1.5M)",
+      "Cruise deferred prosecution agreement ($500k)",
+      "GM ends funding of Cruise robotaxi development (the target)"
+     ],
+     "events_in_or_before_quarter": [
+      "Cruise software recall (80 vehicles) after June 2022 crash",
+      "NHTSA opens preliminary evaluation of Cruise hard braking",
+      "Cruise vehicle drags pedestrian in San Francisco",
+      "California DMV suspends Cruise driverless permits",
+      "Cruise pauses driverless operations nationwide",
+      "Cruise recall of 950 vehicles",
+      "Cruise CEO Kyle Vogt resigns",
+      "Cruise lays off about 24% of staff"
+     ]
+    },
+    {
+     "start": "2024Q3",
+     "quarters": [
+      "2024Q3"
+     ],
+     "end_date": "2024-09-30",
+     "tier1_after": [
+      "GM ends funding of Cruise robotaxi development (the target)",
+      "GM completes folding Cruise into GM, robotaxi work ended"
+     ],
+     "tier12_after": [
+      "Cruise deferred prosecution agreement ($500k)",
+      "GM ends funding of Cruise robotaxi development (the target)",
+      "GM completes folding Cruise into GM, robotaxi work ended"
+     ],
+     "events_in_or_before_quarter": [
+      "Cruise software recall (80 vehicles) after June 2022 crash",
+      "NHTSA opens preliminary evaluation of Cruise hard braking",
+      "Cruise vehicle drags pedestrian in San Francisco",
+      "California DMV suspends Cruise driverless permits",
+      "Cruise pauses driverless operations nationwide",
+      "Cruise recall of 950 vehicles",
+      "Cruise CEO Kyle Vogt resigns",
+      "Cruise lays off about 24% of staff",
+      "NHTSA civil penalty against Cruise ($1.5M)"
+     ]
+    }
+   ],
+   "unfollowed_tier1": 1,
+   "unfollowed_tier12": 0,
+   "first_firing": "2022Q2",
+   "lead_days_to_2024_12_10": 894,
+   "lead_quarters": 10
+  }
+ },
+ "GOOGL": {
+  "eligible_quarters": 1,
+  "evaluated_quarters": 0,
+  "R1": {
+   "feasible": false
+  },
+  "R2": {
+   "feasible": false
+  },
+  "R3": {
+   "feasible": false
+  }
+ },
+ "LYFT": {
+  "eligible_quarters": 1,
+  "evaluated_quarters": 0,
+  "R1": {
+   "feasible": false
+  },
+  "R2": {
+   "feasible": false
+  },
+  "R3": {
+   "feasible": false
+  }
+ },
+ "TSLA": {
+  "eligible_quarters": 9,
+  "evaluated_quarters": 1,
+  "R1": {
+   "feasible": true,
+   "evaluated": 1,
+   "firing_quarters": [],
+   "episodes": [],
+   "unfollowed_tier1": 0,
+   "unfollowed_tier12": 0
+  },
+  "R2": {
+   "feasible": false
+  },
+  "R3": {
+   "feasible": true,
+   "evaluated": 1,
+   "firing_quarters": [],
+   "episodes": [],
+   "unfollowed_tier1": 0,
+   "unfollowed_tier12": 0
+  }
+ },
+ "UBER": {
+  "eligible_quarters": 3,
+  "evaluated_quarters": 0,
+  "R1": {
+   "feasible": false
+  },
+  "R2": {
+   "feasible": false
+  },
+  "R3": {
+   "feasible": false
+  }
+ }
+}
