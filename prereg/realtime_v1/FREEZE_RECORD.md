@@ -23,4 +23,18 @@ protocol, rules, event list, input slice or script changes after this point.
 - `events.csv` is generated from the table in PROTOCOL §5 (32 rows); the protocol table is the
   record if they ever differ.
 
-## Deviations (added after running; none at freeze time)
+## Deviations (added after running)
+
+- **None to the method.** Rules, constants, input, event list and script were run as frozen, once.
+  The four frozen files matched their sha256 at run time.
+- **Same session wrote and ran the rules, and was not blind to GM.** Stated in PROTOCOL §7 before
+  running; repeated here because it is the main limit on this test.
+- **Event dates.** The three dates that decide windows (2022-09-01, 2023-10-26, 2024-12-10) were
+  checked against news reports after scoring and are unchanged. The other dates were not
+  individually re-checked; none of them moves an episode between followed and unfollowed under the
+  primary (Tier 1) count, since the only Tier 1 events in any window are GM's.
+- **Missing event noticed after scoring.** The 2022-06-03 Cruise crash is listed only via its
+  2022-09-01 recall. If dated by the crash, R2's 2021Q2 alarm would count as followed by Tier 2.
+  Reported in RESULTS as exploratory; not added to the frozen list.
+- **Phase 3 largely infeasible.** Four of five companies never reach 8 eligible quarters; Tesla
+  reaches it only in 2026Q3. Reported as infeasible, per PROTOCOL §4. The view was not widened.
