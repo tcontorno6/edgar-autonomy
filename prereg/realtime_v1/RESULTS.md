@@ -68,7 +68,8 @@ alarms with no Tier 1 event in the following year, against 0 for R1.
 - The June 3, 2022 Cruise crash in San Francisco is in the event list only through the recall it
   led to (2022-09-01). Dated by the crash itself it would fall inside R2's 2021Q2 window, making
   that alarm "followed by Tier 2". It was not entered in the frozen list, so the counts above do
-  not use it.
+  not use it. Audit: this is the only classification it would change (`AUDIT_EVENT_LIST.md`);
+  any figure that includes it is a post-hoc amendment.
 
 Event-date check after scoring: the three dates that decide windows were checked against news
 reports and are unchanged: Cruise nationwide pause 2023-10-26

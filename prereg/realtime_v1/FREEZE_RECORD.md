@@ -38,3 +38,13 @@ protocol, rules, event list, input slice or script changes after this point.
   Reported in RESULTS as exploratory; not added to the frozen list.
 - **Phase 3 largely infeasible.** Four of five companies never reach 8 eligible quarters; Tesla
   reaches it only in 2026Q3. Reported as infeasible, per PROTOCOL §4. The view was not widened.
+
+## Audit of the event list (2026-10-25, before merge)
+
+The owner asked for an audit of the post-hoc event candidate before merging. Result in
+`AUDIT_EVENT_LIST.md`: the 2022-06-03 Cruise crash was **never added to the scoring list**
+(`events.csv` is byte-identical to d1234dc); a re-run from the d1234dc files reproduces
+`results.json` exactly. Scored against a scratch list with the crash added, **one classification
+changes**: R2's 2021Q2 alarm becomes a Tier 2 "hit" in the secondary count (R2 unfollowed Tier 1–2:
+1 frozen vs 0 amended). No Tier 1 classification changes. The frozen-list result is the headline;
+the amended one is a post-hoc amendment and is labelled so wherever it appears.
