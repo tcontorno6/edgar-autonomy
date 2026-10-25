@@ -14,7 +14,7 @@ What six robotaxi and autonomy companies (Tesla, Alphabet/Waymo, Uber, Lyft, GM/
 | `index.html` | Self-contained dashboard (served by GitHub Pages) |
 | `WRITEUP.md` | Methodology, validation and findings |
 | `data/*.csv` | Derived tidy tables: attention, quantification, stance vs baseline, GM wind-down |
-| `data/validation/`, `analysis/stance_kappa.py` | The two 45-passage stance validation samples (v1, and the fresh v2 draw behind the published 80%) and the Cohen's kappa calculation |
+| `data/validation/`, `analysis/stance_kappa.py` | The two 45-passage stance self-consistency samples (v1, and the fresh v2 draw behind the published 80%, which is not a validation) and the Cohen's kappa calculation |
 | `prereg/winddown_v3/` | Pre-registered protocol, freeze record and frozen file for the out-of-sample GM wind-down test |
 | `prereg/exit_tone_v1/` | Pre-registered feasibility check, counts and decision for testing GM's tone drop on three other AV exits (stopped at Phase 0) |
 
