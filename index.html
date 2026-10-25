@@ -246,7 +246,7 @@ footer a{color:var(--accent)}
   <section id="methods">
     <div class="fnum">METHOD &amp; LIMITS</div>
     <h2>How it was built, and where it is weak.</h2>
-    <p class="sub">Four phases. The first three (corpus, attention, numbers) were each validated on a held-out sample with the rules frozen before drawing it; the fourth (stance) has only a self-consistency check, not a validation. The pipeline runs locally with free tools; no paid API was used at any step. Claude, the AI assistant that built it, picked the list v3 terms and labeled the stance self-consistency sample, according to the repository record (the labeling script itself is not in the repository and has not been reviewed).</p>
+    <p class="sub">Four phases. The corpus was checked against EDGAR; attention and numbers were each validated on a held-out sample with the rules frozen before drawing it; stance has only a self-consistency check, not a validation. The pipeline runs locally with free tools; no paid API was used at any step. Claude, the AI assistant that built it, picked the list v3 terms and labeled the stance self-consistency sample, according to the repository record (the labeling script itself is not in the repository and has not been reviewed).</p>
     <div class="grid2">
       <div class="panel">
         <h3>Pipeline</h3>
